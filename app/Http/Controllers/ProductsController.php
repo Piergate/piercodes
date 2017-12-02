@@ -93,7 +93,8 @@ class ProductsController extends Controller
             'mockup' => $fileNameMockup,
             'branding' => $fileNameBranding
         ]);
-        return 'Your Project Add .';
+        // return 'Your Project Add .';
+       return redirect('/');
 
     }
 
