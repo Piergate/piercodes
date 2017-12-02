@@ -1,1 +1,1 @@
-<?php `cd ../piercodes && git pull`;
+<?php `git pull`;
