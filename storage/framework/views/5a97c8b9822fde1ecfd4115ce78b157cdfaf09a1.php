@@ -1,13 +1,10 @@
-@extends('layouts.index')
-{{-- @section('title', 'product name') --}}
-
-@section('content')
-<header class="projectHeaderSection" style="  background: linear-gradient(to right, rgba(125, 87, 99, 0.7), rgba(115, 176, 156, 0.8)), url({{ asset('app-images/'.$product->image->background)}});">
+<?php $__env->startSection('content'); ?>
+<header class="projectHeaderSection" style="  background: linear-gradient(to right, rgba(125, 87, 99, 0.7), rgba(115, 176, 156, 0.8)), url(<?php echo e(storage_path('images/'.$product->image->background)); ?>);">
 	<!-- Main Project Header Content Generic Div -->
 	<div class="headerContent container">
 		<!-- Logo and Navigation Menu Top Panel -->
 		
-			@include('navbar')
+			<?php echo $__env->make('navbar', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 		<!-- Project Header Text Information -->
 		<div class="row">
 			<!-- Whole Project Header Text Information -->
@@ -15,14 +12,14 @@
 				<div class="col-md-2"></div>
 				<div class="col-md-2">
 					<div data-aos="fade-right" data-aos-duration="900" class="projectLogo">
-						<img src="{{ asset('app-images/'.$product->image->logo)}}" alt="Souq Naql Logo" />
+						<img src="<?php echo e(storage_path('images/'.$product->image->logo)); ?>" alt="Souq Naql Logo" />
 					</div>
 				</div>
 				<div class="col-md-6">
 					<div class="projectHint">
-						<h1 data-aos="fade-right" data-aos-duration="1500">{{ $product->title }}</h1>
-						<p data-aos="fade-right" data-aos-duration="2100">{{ $product->description }}.</p>
-						<a href="{{ $product->url }}" target="_blank" class="headerLink"><i class="fa fa-check"></i>Project Website</a>
+						<h1 data-aos="fade-right" data-aos-duration="1500"><?php echo e($product->title); ?></h1>
+						<p data-aos="fade-right" data-aos-duration="2100"><?php echo e($product->description); ?>.</p>
+						<a href="<?php echo e($product->url); ?>" target="_blank" class="headerLink"><i class="fa fa-check"></i>Project Website</a>
 					</div>
 				</div>
 				<div class="col-md-2"></div>
@@ -49,7 +46,7 @@
 		<!-- Project Main Mockup Picture -->
 		<div class="row">
 			<div class="mockUpPicture">
-				<img data-aos="fade-right" data-aos-duration="900" src="{{ asset('app-images/'.$product->image->mockup)}}" alt="{{$product->title }} Mockup" />
+				<img data-aos="fade-right" data-aos-duration="900" src="<?php echo e(storage_path('images/'.$product->image->mockup)); ?>" alt="<?php echo e($product->title); ?> Mockup" />
 			</div>
 		</div>
 
@@ -65,11 +62,12 @@
 		<div class="row">
 			<div data-aos="fade-left" data-aos-duration="900" class="mockUpPicture">
 				
-				<img src="{{ asset('app-images/'.$product->image->branding)}}" alt="{{ $product->title }} Branding" />
+				<img src="<?php echo e(storage_path('/app/images/'.$product->image->branding)); ?>" alt="<?php echo e($product->title); ?> Branding" />
 			</div>
 		</div>
 	</div>
 </section>
-@include('getInTouchSection')
-@include('footer')
-@endsection
+<?php echo $__env->make('getInTouchSection', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php echo $__env->make('footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.index', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

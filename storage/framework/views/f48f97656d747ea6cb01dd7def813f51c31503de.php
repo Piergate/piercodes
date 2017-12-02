@@ -165,7 +165,7 @@
     </div>
 </section>
 <!-- Projects Section Structure -->
-<?php if(!isset($products)): ?>
+<?php if(isset($products)): ?>
 <section class="projectsSection" id="portfolio">
     <div class="container-fluid">
         <!-- Projects Title -->
@@ -181,7 +181,7 @@
         <?php if( $loop->iteration %2 !== 0): ?>
         <div class="row">
             <div class="projectTemplate">
-                <div class="souqWebProjectPic col-md-5" data-aos="flip-left" data-aos-duration="1500" style="background-image: linear-gradient(to right, rgba(125, 87, 99, 0.7), rgba(115, 176, 156, 0.8)), url('../storage/images/<?php echo e($product->image->avater); ?> ');">
+                <div class="souqWebProjectPic col-md-5" data-aos="flip-left" data-aos-duration="1500" style="background-image: linear-gradient(to right, rgba(125, 87, 99, 0.7), rgba(115, 176, 156, 0.8)), url('../storage/app-images/<?php echo e($product->image->avater); ?> ');">
                     <a href="<?php echo e(url('/product_details'.'/'.$product->slug)); ?>" target="_blank">Project Details</a>
                 </div>
                 <div class="rightProjectInfo col-md-7">
@@ -215,7 +215,7 @@
 
         <div class="row">
             <div class="projectTemplate">
-                <div class="maysaraProjectPic pull-image-right col-md-5" data-aos="flip-left" data-aos-duration="1500" style="background-image: linear-gradient(to right, rgba(125, 87, 99, 0.7), rgba(115, 176, 156, 0.8)), url('../storage/images/<?php echo e($product->image->avater); ?> ');">
+                <div class="maysaraProjectPic pull-image-right col-md-5" data-aos="flip-left" data-aos-duration="1500" style="background-image: linear-gradient(to right, rgba(125, 87, 99, 0.7), rgba(115, 176, 156, 0.8)), url('../storage/app-images/<?php echo e($product->image->avater); ?> ');">
                     <a href="<?php echo e(url('/product_details'.'/'.$product->slug)); ?>" target="_blank">Project Details</a>
                 </div>
                 <div class="rightProjectInfo col-md-7">

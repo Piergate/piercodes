@@ -68,23 +68,23 @@ class ProductsController extends Controller
 
         $avater = $data['avater'];
         $fileNameAvater = $product->title . '_avater.' . $avater->getClientOriginalExtension();
-        ImageIntervent::make($avater)->save( storage_path('app/public/images/'.$fileNameAvater));
+        ImageIntervent::make($avater)->save( storage_path('app/public/app-images/'.$fileNameAvater));
 
         $background = $data['background'];
         $fileNameBackground = $product->title . '_background.' . $background->getClientOriginalExtension();
-        ImageIntervent::make($background)->save( storage_path('app/public/images/'.$fileNameBackground));
+        ImageIntervent::make($background)->save( storage_path('app/public/app-images/'.$fileNameBackground));
 
         $logo = $data['logo'];
         $fileNameLogo = $product->title . '_logo.' . $logo->getClientOriginalExtension();
-        ImageIntervent::make($logo)->resize(300,300)->save( storage_path('app/public/images/'.$fileNameLogo));
+        ImageIntervent::make($logo)->resize(300,300)->save( storage_path('app/public/app-images/'.$fileNameLogo));
 
         $mockup = $data['mockup'];
         $fileNameMockup = $product->title . '_mockup.' . $mockup->getClientOriginalExtension();
-        ImageIntervent::make($mockup)->save( storage_path('app/public/images/'.$fileNameMockup));
+        ImageIntervent::make($mockup)->save( storage_path('app/public/app-images/'.$fileNameMockup));
 
         $branding = $data['branding'];
         $fileNameBranding = $product->title . '_branding .' . $branding->getClientOriginalExtension();
-        ImageIntervent::make($branding)->save( storage_path('app/public/images/'.$fileNameBranding));
+        ImageIntervent::make($branding)->save( storage_path('app/public/app-images/'.$fileNameBranding));
 
         $product->image()->create([
             'avater' => $fileNameAvater,
