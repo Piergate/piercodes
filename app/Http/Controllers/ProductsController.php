@@ -45,6 +45,7 @@ class ProductsController extends Controller
             'title' => 'required|max:191',
             'description' => 'required',
             'rate' => 'required',
+            
             'url'  => 'required',
             'category_id' => 'required',
             'avater' => 'required',
