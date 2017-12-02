@@ -166,7 +166,7 @@
     </div>
 </section>
 <!-- Projects Section Structure -->
-@if(!isset($products))
+@if(isset($products))
 <section class="projectsSection" id="portfolio">
     <div class="container-fluid">
         <!-- Projects Title -->
