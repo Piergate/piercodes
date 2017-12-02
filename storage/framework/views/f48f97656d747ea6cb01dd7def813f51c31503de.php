@@ -1,16 +1,15 @@
-@extends('layouts.index')
-@section('title', 'Piercodes Software House')
+<?php $__env->startSection('title', 'Piercodes Software House'); ?>
 
-@section('content')
+<?php $__env->startSection('content'); ?>
 <!-- Piercodes Header Structure -->
 <header class="headerSection">
     <!-- Background Video -->
-    <video id="player" src=" {{asset('images/textvideo.mp4') }}" autoplay loop muted></video>
+    <video id="player" src=" <?php echo e(asset('images/textvideo.mp4')); ?>" autoplay loop muted></video>
     <!-- Main Header Content Generic Div -->
     <div class="headerContent container">
         <!-- Logo and Navigation Menu Top Panel -->
 
-        @include('navbar')
+        <?php echo $__env->make('navbar', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
         <!-- Header Text Content -->
         <div class="row">
             <!-- Whole Header Text Content -->
@@ -44,7 +43,7 @@
         <div class="row">
             <!-- Left CEO Profile Block -->
             <div class="ceoProfile col-md-4" data-aos="fade-right" data-aos-duration="1200">
-                <img class="img-responisve" src=" {{asset('images/piercodes_logo.png')  }}" alt="Piercodes Logo">
+                <img class="img-responisve" src=" <?php echo e(asset('images/piercodes_logo.png')); ?>" alt="Piercodes Logo">
                 <span class="firstUnderline" style="color: white; margin-left: 0;">ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ</span>
                 <span class="secondUnderline" style="color: white">ــــــــــــــــــــــــــــــــــــــــــــــــــــ</span>    
 
@@ -166,7 +165,7 @@
     </div>
 </section>
 <!-- Projects Section Structure -->
-@if(!isset($products))
+<?php if(!isset($products)): ?>
 <section class="projectsSection" id="portfolio">
     <div class="container-fluid">
         <!-- Projects Title -->
@@ -177,33 +176,33 @@
                 <span class="secondUnderline">ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ</span>    
             </div>
         </div>
-        @foreach( $products as $product )
+        <?php $__currentLoopData = $products; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $product): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
         <!-- Project 1 - Structure -->
-        @if( $loop->iteration %2 !== 0)
+        <?php if( $loop->iteration %2 !== 0): ?>
         <div class="row">
             <div class="projectTemplate">
-                <div class="souqWebProjectPic col-md-5" data-aos="flip-left" data-aos-duration="1500" style="background-image: linear-gradient(to right, rgba(125, 87, 99, 0.7), rgba(115, 176, 156, 0.8)), url('../storage/images/{{ $product->image->avater }} ');">
-                    <a href="{{url('/product_details'.'/'.$product->slug) }}" target="_blank">Project Details</a>
+                <div class="souqWebProjectPic col-md-5" data-aos="flip-left" data-aos-duration="1500" style="background-image: linear-gradient(to right, rgba(125, 87, 99, 0.7), rgba(115, 176, 156, 0.8)), url('../storage/images/<?php echo e($product->image->avater); ?> ');">
+                    <a href="<?php echo e(url('/product_details'.'/'.$product->slug)); ?>" target="_blank">Project Details</a>
                 </div>
                 <div class="rightProjectInfo col-md-7">
                     <div class="projectText">
-                        <h4 data-aos="fade-right" data-aos-duration="700">{{ $product->category->name}}</h4>
-                        <h1 data-aos="fade-right" data-aos-duration="1200">{{ $product->title}}</h1>
+                        <h4 data-aos="fade-right" data-aos-duration="700"><?php echo e($product->category->name); ?></h4>
+                        <h1 data-aos="fade-right" data-aos-duration="1200"><?php echo e($product->title); ?></h1>
                         <span class="firstUnderline">ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ</span>
                         <span class="secondUnderline">ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ</span>        
-                        <p data-aos="fade-right" data-aos-duration="2000">{{ $product->description}}.</p>
+                        <p data-aos="fade-right" data-aos-duration="2000"><?php echo e($product->description); ?>.</p>
                         <span class="firstUnderline">ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ</span>
                         <h2 data-aos="fade-right" data-aos-duration="2200">Customer Rating</h2>
                         <span class="secondUnderline" style="color: #73b09c">ــــــــــــــــــــــــــــــــــــــــــــــــ</span>
                         <span class="customerSpan" data-aos="fade-right" data-aos-duration="2600">The customer has rated this with:</span>
                         <div class="rateStars" data-aos="fade-right" data-aos-duration="2900">
-                            @for ($i = 0; $i < 5 ; $i++)
-                            @if($i >= $product->rate )
+                            <?php for($i = 0; $i < 5 ; $i++): ?>
+                            <?php if($i >= $product->rate ): ?>
                             <i class="fa fa-star greyStar"></i>
-                            @else
+                            <?php else: ?>
                             <i class="fa fa-star"></i>
-                            @endif
-                            @endfor
+                            <?php endif; ?>
+                            <?php endfor; ?>
                         </div>
                         <!-- <button class="customerQuoteButton" data-aos="fade-right" data-aos-duration="1000">Customer Quote<i class="fa fa-sort-desc" aria-hidden="true"></i></button>-->
                     </div>
@@ -212,46 +211,46 @@
         </div>
         <!-- End Project 1 - Structure -->
         <!-- Project 2 - Structure -->
-        @else
+        <?php else: ?>
 
         <div class="row">
             <div class="projectTemplate">
-                <div class="maysaraProjectPic pull-image-right col-md-5" data-aos="flip-left" data-aos-duration="1500" style="background-image: linear-gradient(to right, rgba(125, 87, 99, 0.7), rgba(115, 176, 156, 0.8)), url('../storage/images/{{ $product->image->avater }} ');">
-                    <a href="{{url('/product_details'.'/'.$product->slug) }}" target="_blank">Project Details</a>
+                <div class="maysaraProjectPic pull-image-right col-md-5" data-aos="flip-left" data-aos-duration="1500" style="background-image: linear-gradient(to right, rgba(125, 87, 99, 0.7), rgba(115, 176, 156, 0.8)), url('../storage/images/<?php echo e($product->image->avater); ?> ');">
+                    <a href="<?php echo e(url('/product_details'.'/'.$product->slug)); ?>" target="_blank">Project Details</a>
                 </div>
                 <div class="rightProjectInfo col-md-7">
                     <div class="projectText">
-                        <h4 data-aos="fade-right" data-aos-duration="700">{{ $product->category->name}}</h4>
-                        <h1 data-aos="fade-right" data-aos-duration="1200">{{ $product->title}}</h1>
+                        <h4 data-aos="fade-right" data-aos-duration="700"><?php echo e($product->category->name); ?></h4>
+                        <h1 data-aos="fade-right" data-aos-duration="1200"><?php echo e($product->title); ?></h1>
                         <span class="firstUnderline">ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ</span>
                         <span class="secondUnderline">ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ</span>        
                         <p data-aos="fade-right" data-aos-duration="2000">
-                            {{ $product->description}} .
+                            <?php echo e($product->description); ?> .
                         </p>
                         <span class="firstUnderline">ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ</span>
                         <h2 data-aos="fade-right" data-aos-duration="2200">Customer Rating</h2>
                         <span class="secondUnderline" style="color: #73b09c">ــــــــــــــــــــــــــــــــــــــــــــــــ</span>
                         <span class="customerSpan" data-aos="fade-right" data-aos-duration="2600">The customer has rated this with:</span>
                         <div class="rateStars" data-aos="fade-right" data-aos-duration="2900">
-                            @for ($i = 0; $i < 5 ; $i++)
-                            @if($i >= $product->rate )
+                            <?php for($i = 0; $i < 5 ; $i++): ?>
+                            <?php if($i >= $product->rate ): ?>
                             <i class="fa fa-star greyStar"></i>
-                            @else
+                            <?php else: ?>
                             <i class="fa fa-star"></i>
-                            @endif
-                            @endfor
+                            <?php endif; ?>
+                            <?php endfor; ?>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        @endif
+        <?php endif; ?>
         <!-- End Project 2 - Structure -->
-        @endforeach
+        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 
     </div>
 </section>
-@endif
+<?php endif; ?>
 <section class="projectsBrandingSection">
     <div class="container-fluid">
         <div class="row">
@@ -265,33 +264,33 @@
             <div class="brandingWorkList">
                 <ul>
                     <li data-aos="flip-up">
-                        <a data-height='720' data-lighter='images/branding_maysaraLogom.jpg' data-width='1280' href='images/branding_maysaraLogom.jpg'><img src=" {{asset('images/branding_maysaraLogo.jpg') }}" alt="Maysara Logo" /></a>
+                        <a data-height='720' data-lighter='images/branding_maysaraLogom.jpg' data-width='1280' href='images/branding_maysaraLogom.jpg'><img src=" <?php echo e(asset('images/branding_maysaraLogo.jpg')); ?>" alt="Maysara Logo" /></a>
                         <div class="middle">
                             <div class="text"><p>Click on the image to zoom in</p></div>
                         </div>
                         <div class="overlay"></div>
                     </li><li data-aos="flip-up">
-                        <a data-height='720' data-lighter='images/branding_maysram.jpg' data-width='1280' href='images/branding_maysram.jpg'><img src=" {{asset('images/branding_maysra.jpg') }}" alt="Maysara Branding" /></a>
+                        <a data-height='720' data-lighter='images/branding_maysram.jpg' data-width='1280' href='images/branding_maysram.jpg'><img src=" <?php echo e(asset('images/branding_maysra.jpg')); ?>" alt="Maysara Branding" /></a>
                         <div class="middle">
                             <div class="text"><p>Click on the image to zoom in</p></div>
                         </div>
                     </li><li data-aos="flip-up">
-                        <a data-height='720' data-lighter='images/branding_cardm.jpg' data-width='1280' href='images/branding_cardm.jpg'><img src=" {{asset('images/branding_card.jpg') }}" alt="Piercodes Card" /></a>
+                        <a data-height='720' data-lighter='images/branding_cardm.jpg' data-width='1280' href='images/branding_cardm.jpg'><img src=" <?php echo e(asset('images/branding_card.jpg')); ?>" alt="Piercodes Card" /></a>
                         <div class="middle">
                             <div class="text"><p>Click on the image to zoom in</p></div>
                         </div>
                     </li><li data-aos="flip-up">
-                        <a data-height='720' data-lighter='images/branding_cupm.jpg' data-width='1280' href='images/branding_cupm.jpg'><img src=" {{asset('images/branding_cup.jpg') }}" alt="Piercodes Cup" /></a>
+                        <a data-height='720' data-lighter='images/branding_cupm.jpg' data-width='1280' href='images/branding_cupm.jpg'><img src=" <?php echo e(asset('images/branding_cup.jpg')); ?>" alt="Piercodes Cup" /></a>
                         <div class="middle">
                             <div class="text"><p>Click on the image to zoom in</p></div>
                         </div>
                     </li><li data-aos="flip-up">
-                        <a data-height='720' data-lighter='images/branding_eid1m.jpg' data-width='1280' href='images/branding_eid1m.jpg'><img src=" {{asset('images/branding_eid1.jpg') }}" alt="Eid Mubarak" /></a>
+                        <a data-height='720' data-lighter='images/branding_eid1m.jpg' data-width='1280' href='images/branding_eid1m.jpg'><img src=" <?php echo e(asset('images/branding_eid1.jpg')); ?>" alt="Eid Mubarak" /></a>
                         <div class="middle">
                             <div class="text"><p>Click on the image to zoom in</p></div>
                         </div>
                     </li><li data-aos="flip-up">
-                        <a data-height='720' data-lighter='images/branding_eid2m.jpg' data-width='1280' href='images/branding_eid2m.jpg'><img src=" {{asset('images/branding_eid2.jpg') }}" alt="Eid Mubarak" /></a>
+                        <a data-height='720' data-lighter='images/branding_eid2m.jpg' data-width='1280' href='images/branding_eid2m.jpg'><img src=" <?php echo e(asset('images/branding_eid2.jpg')); ?>" alt="Eid Mubarak" /></a>
                         <div class="middle">
                             <div class="text"><p>Click on the image to zoom in</p></div>
                         </div>
@@ -300,7 +299,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="img-zoomer">
-                            <img src=" {{asset('images/branding_maysram.jpg') }}" alt="Maysara Branding">
+                            <img src=" <?php echo e(asset('images/branding_maysram.jpg')); ?>" alt="Maysara Branding">
                         </div>
                     </div>
                 </div>
@@ -308,7 +307,7 @@
         </div>
     </div>
 </section>
-@include('getInTouchSection')
+<?php echo $__env->make('getInTouchSection', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 <!-- Our Clients Section -->
 <section class="clientsSection" id="ourclients">
     <!-- Clients Title -->
@@ -326,11 +325,11 @@
         <div class="row">
             <div class="ourClientsList">
                 <ul>
-                    <li data-aos="fade-right" data-aos-duration="400"><img src=" {{asset('images/sellepier_logo.png') }}" alt="Seller Pier Logo" /></li>
-                    <li data-aos="fade-right" data-aos-duration="1000"><img src=" {{asset('images/souqnaql_logo.png') }}" alt="Souq Naql Logo" /></li>
-                    <li data-aos="fade-right" data-aos-duration="1600"><img src=" {{asset('images/rhino_logo.png') }}" alt="Rhino Logo" /></li>
-                    <li data-aos="fade-right" data-aos-duration="1600"><img src=" {{asset('images/piergate.png') }}" alt="Piergate Logo" /></li>
-                    <li data-aos="fade-right" data-aos-duration="1600"><img src=" {{asset('images/Maysara.png') }}" alt="Maysara Logo" /></li>
+                    <li data-aos="fade-right" data-aos-duration="400"><img src=" <?php echo e(asset('images/sellepier_logo.png')); ?>" alt="Seller Pier Logo" /></li>
+                    <li data-aos="fade-right" data-aos-duration="1000"><img src=" <?php echo e(asset('images/souqnaql_logo.png')); ?>" alt="Souq Naql Logo" /></li>
+                    <li data-aos="fade-right" data-aos-duration="1600"><img src=" <?php echo e(asset('images/rhino_logo.png')); ?>" alt="Rhino Logo" /></li>
+                    <li data-aos="fade-right" data-aos-duration="1600"><img src=" <?php echo e(asset('images/piergate.png')); ?>" alt="Piergate Logo" /></li>
+                    <li data-aos="fade-right" data-aos-duration="1600"><img src=" <?php echo e(asset('images/Maysara.png')); ?>" alt="Maysara Logo" /></li>
                 </ul>
             </div>
         </div>
@@ -399,5 +398,7 @@
         </div>
     </div>
 </section>
-@include('footer')
-@endsection
+<?php echo $__env->make('footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.index', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
