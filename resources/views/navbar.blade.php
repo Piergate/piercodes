@@ -1,7 +1,9 @@
 <div class="topPanel row">
 	<!-- Logo Block -->
 	<div class="logoBlock col-md-4 pull-left">
+		<a href="{{ url('/') }}" title=" {{config('app.name', 'PierCodes') }}">
 		<img class="img-responsive" src="{{ asset('images/piercodes_logo.png') }}" alt="Piercodes Logo" />
+		</a>
 	</div>
 	<!-- Navigation Menu -->
 	<div class="navMenuIcon col-md-2 pull-right">
