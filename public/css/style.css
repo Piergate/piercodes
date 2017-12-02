@@ -1,0 +1,2214 @@
+@font-face {
+  font-family: Elephant;
+      /*background-image: url("../img/background.png") */
+
+  src: url("../fonts/Elephant Regular.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI';
+}
+
+html, body {
+  background-color: #e9eaea;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.mainHeading {
+  font-size: 270%;
+  margin: 0;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.mainHeading span {
+  color: #73b09c;
+  font-weight: 400;
+}
+
+.firstUnderline {
+  display: block;
+  color: #73b09c;
+  margin: 0;
+  margin-left: 7rem;
+}
+
+.secondUnderline {
+  display: block;
+  color: #333333;
+  margin-top: -1rem;
+}
+
+.headerLink {
+  color: #FFFFFF;
+  display: inline-block;
+  width: 65%;
+  font-size: 120%;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  margin-top: 1.5rem;
+  padding: 1.3rem 3rem;
+  border: 2px solid #FFFFFF;
+  position: relative;
+  left: -800px;
+  border-radius: 8px;
+  transition: background 0.5s ease-in-out;
+}
+.headerLink i {
+  padding-right: 1rem;
+}
+.headerLink:hover {
+  text-decoration: none;
+  background-color: #333333;
+  color: #FFFFFF;
+}
+.headerLink:focus {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.headerLink:active {
+  text-decoration: none;
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+.lighter-close {
+  text-decoration: none !important;
+}
+.lighter-close:hover {
+  text-decoration: none !important;
+}
+
+.ui-datepicker {
+  overflow: hidden;
+}
+
+.ui-widget-header {
+  background: #73b09c !important;
+  color: #FFFFFF !important;
+  border: none;
+}
+
+.ui-widget-content {
+  border: 1px solid #73b09c !important;
+}
+
+.ui-corner-all {
+  border-radius: 0 !important;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default {
+  color: #73b09c !important;
+}
+
+.ui-datepicker .ui-datepicker-next-hover {
+  background-color: transparent !important;
+}
+
+.lighter-overlay {
+  background-color: transparent !important;
+}
+
+.headerSection {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.headerSection video {
+  width: 100%;
+  display: block;
+}
+.headerSection:before {
+  content: '';
+  position: absolute;
+  background: linear-gradient(to right, rgba(125, 87, 99, 0.8), rgba(115, 176, 156, 0.9));
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+}
+.headerSection .headerContent {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  color: #FFFFFF;
+  z-index: 10;
+}
+.headerSection .headerContent .topPanel {
+  padding-top: 3rem;
+}
+.headerSection .headerContent .topPanel .logoBlock img {
+  width: 70%;
+  max-width: 70%;
+}
+.headerSection .headerContent .topPanel .navMenuIcon {
+  padding-top: 1rem;
+}
+.headerSection .headerContent .topPanel .navMenuIcon a {
+  color: #FFFFFF;
+  font-size: 120%;
+  font-weight: 500;
+}
+.headerSection .headerContent .topPanel .navMenuIcon a span {
+  padding-right: 1rem;
+}
+.headerSection .headerContent .topPanel .navMenuIcon a:hover {
+  text-decoration: none;
+}
+.headerSection .headerContent .topPanel .navMenuIcon a:focus {
+  text-decoration: none;
+}
+.headerSection .headerContent .topPanel .navMenuIcon a:active {
+  text-decoration: none;
+}
+.headerSection .headerContent .mainNavMenu {
+  display: none;
+  margin-top: 1rem;
+  padding: 2.5rem 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  position: absolute;
+  border-radius: 10px;
+}
+.headerSection .headerContent .mainNavMenu ul {
+  list-style-type: none;
+  margin: 0;
+}
+.headerSection .headerContent .mainNavMenu ul li {
+  display: inline-block;
+  padding: 0 2.2rem;
+}
+.headerSection .headerContent .mainNavMenu ul li i {
+  padding-right: 0.7rem;
+  font-size: 92%;
+}
+.headerSection .headerContent .mainNavMenu ul li a {
+  font-size: 110%;
+  color: #FFFFFF;
+  font-weight: lighter;
+  text-transform: capitalize;
+  transition: color 0.5s ease-in-out;
+}
+.headerSection .headerContent .mainNavMenu ul li a:hover {
+  color: #73b09c;
+  text-decoration: none;
+}
+.headerSection .headerContent .mainNavMenu ul li a:active {
+  text-decoration: none;
+}
+.headerSection .headerContent .mainNavMenu ul li a:focus {
+  text-decoration: none;
+}
+.headerSection .headerContent .headerText {
+  padding-left: 6rem;
+  padding-top: 12.6rem;
+}
+.headerSection .headerContent .headerText .textArea h1 {
+  font-size: 300%;
+  position: relative;
+  left: -800px;
+}
+.headerSection .headerContent .headerText .textArea p {
+  font-size: 110%;
+  font-weight: lighter;
+  line-height: 2.6rem;
+  font-style: italic;
+  position: relative;
+  left: -800px;
+}
+.headerSection .headerContent .headerText .textArea p strong {
+  color: #73b09c;
+}
+
+.aboutUsSection {
+  background-color: #e9eaea;
+  width: 100%;
+}
+.aboutUsSection .aboutUsHeading {
+  padding: 7rem 0 2rem 7rem;
+}
+.aboutUsSection .ceoProfile {
+  background-image: linear-gradient(to right, rgba(125, 87, 99, 0.7), rgba(115, 176, 156, 0.8)), url("../images/ceo_bg.png");
+  height: auto;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 10rem 0 10rem 0;
+  position: relative;
+}
+.aboutUsSection .ceoProfile img {
+  width: 50%;
+  max-width: 50%;
+}
+.aboutUsSection .ceoProfile h3 {
+  width: 70%;
+  margin: 0 auto;
+  font-weight: 500;
+  letter-spacing: 0.3rem;
+  font-weight: lighter;
+  line-height: 2rem;
+  text-transform: uppercase;
+  font-size: 95%;
+  margin-top: 1rem;
+}
+.aboutUsSection .ceoProfile p {
+  font-weight: lighter;
+  font-size: 100%;
+  margin-top: 0.25rem;
+  letter-spacing: 0.1rem;
+}
+.aboutUsSection .ceoProfile p a {
+  font-family: 'Segoe UI';
+  color: #FFFFFF;
+  font-weight: 400;
+  letter-spacing: 0;
+  transition: all 0.5s ease-in-out;
+}
+.aboutUsSection .ceoProfile p a i {
+  color: #0084b1;
+}
+.aboutUsSection .ceoProfile p a:hover {
+  color: #0084b1;
+  text-decoration: none;
+}
+.aboutUsSection .aboutText {
+  padding: 1rem 0 5rem 5rem;
+  background-image: url("../images/code_bg.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+.aboutUsSection .aboutText h1 {
+  margin: 0;
+  font-size: 320%;
+  font-weight: lighter;
+}
+.aboutUsSection .aboutText h3 {
+  margin: 0;
+  background-color: #73b09c;
+  width: 60%;
+  margin-top: 1rem;
+  color: #FFFFFF;
+  padding: 1rem;
+  padding-top: 0.8rem;
+  font-weight: lighter;
+  font-size: 110%;
+}
+.aboutUsSection .aboutText p {
+  width: 77%;
+  font-weight: lighter;
+  font-size: 113%;
+  margin-top: 2rem;
+  color: #333333;
+}
+
+.servicesSection {
+  padding-bottom: 5rem;
+}
+.servicesSection .servicesHeading {
+  padding: 7rem 0 0rem 7rem;
+}
+.servicesSection .servicesIcons .servicesList {
+  text-align: center;
+  margin-top: 3rem;
+  list-style-type: none;
+}
+.servicesSection .servicesIcons .servicesList li {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  width: 21%;
+  margin-top: 4rem;
+}
+.servicesSection .servicesIcons .servicesList li .serviceIcon i {
+  font-size: 300%;
+  width: 10rem;
+  height: 10rem;
+  color: #73b09c;
+  margin: 0 auto;
+  padding-top: 2.8rem;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  box-shadow: 8px 8px 0 #ccc;
+  transition: all 0.5s ease-in-out;
+}
+.servicesSection .servicesIcons .servicesList li .serviceIcon i:hover {
+  background-color: #333333;
+  color: #73b09c;
+  box-shadow: 5px 5px 0 #ccc;
+}
+.servicesSection .servicesIcons .servicesList li .serviceInfo h3 {
+  font-size: 130%;
+  color: #333333;
+  margin-bottom: 0;
+  margin-bottom: 0.4rem;
+  text-transform: capitalize;
+}
+.servicesSection .servicesIcons .servicesList li .serviceInfo span {
+  color: #333333;
+  font-size: 80%;
+  display: inline-block;
+  width: 90%;
+  font-style: italic;
+}
+.servicesSection .pickUs {
+  background-image: linear-gradient(to right, rgba(125, 87, 99, 0.7), rgba(115, 176, 156, 0.7)), url("/../images/pickus_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-top: 4rem;
+  height: auto;
+  overflow: hidden;
+  color: #FFFFFF;
+  padding: 7rem 3rem;
+  padding-top: 7rem;
+  padding-left: 5rem;
+}
+.servicesSection .pickUs h3 {
+  font-weight: lighter;
+  margin: 0;
+}
+.servicesSection .pickUs ul {
+  list-style-type: none;
+  margin-top: 2rem;
+}
+.servicesSection .pickUs ul li {
+  font-size: 100%;
+  font-weight: lighter;
+  margin-bottom: 1rem;
+  transition: all 0.5s ease-in-out;
+}
+.servicesSection .pickUs ul li i {
+  color: #ffc847;
+  padding-right: 0.7rem;
+  font-size: 80%;
+}
+.servicesSection .pickUs ul li:hover {
+  padding-left: 2rem;
+}
+
+.projectsSection {
+  margin-bottom: 5rem;
+}
+.projectsSection .projectsHeading {
+  padding: 7rem 0 0rem 7rem;
+  margin-bottom: 3rem;
+}
+.projectsSection .projectTemplate {
+  margin-top: 2rem;
+}
+.projectsSection .projectTemplate .pull-image-right {
+  float: right;
+  clear: right;
+}
+.projectsSection .projectTemplate .maysaraProjectPic {
+  /*background-image: linear-gradient(to right, rgba(125, 87, 99, 0.7), rgba(115, 176, 156, 0.8)), url("../images/maysara.gif");*/
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 27rem 0;
+  text-align: center;
+}
+.projectsSection .projectTemplate .maysaraProjectPic a {
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  padding: 1rem 5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+}
+.projectsSection .projectTemplate .maysaraProjectPic a:hover {
+  text-decoration: none;
+  background-color: #f0d355;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+.projectsSection .projectTemplate .maysaraProjectPic {
+  background-image: linear-gradient(to right, rgba(125, 87, 99, 0.7), rgba(115, 176, 156, 0.8)), url("../images/maysara.gif");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 27rem 0;
+  text-align: center;
+}
+.projectsSection .projectTemplate .maysaraProjectPic a {
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  padding: 1rem 5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+}
+.projectsSection .projectTemplate .maysaraProjectPic a:hover {
+  text-decoration: none;
+  background-color: #f0d355;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+.projectsSection .projectTemplate .mokaProjectPic {
+  background-image: linear-gradient(to right, rgba(125, 87, 99, 0.5), rgba(115, 176, 156, 0.6)), url("../images/moka_bakery.gif");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 27rem 0;
+  text-align: center;
+}
+.projectsSection .projectTemplate .mokaProjectPic a {
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  padding: 1rem 5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+}
+.projectsSection .projectTemplate .mokaProjectPic a:hover {
+  text-decoration: none;
+  background-color: #f0d355;
+  background-color: #f0d355;
+  color: #FFFFFF;
+}
+.projectsSection .projectTemplate .sellerpierProjectPic {
+  background-image: linear-gradient(to right, rgba(125, 87, 99, 0.7), rgba(115, 176, 156, 0.8)), url("../images/sellerpier.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 27rem 0;
+  text-align: center;
+}
+.projectsSection .projectTemplate .sellerpierProjectPic a {
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  padding: 1rem 5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+}
+.projectsSection .projectTemplate .sellerpierProjectPic a:hover {
+  text-decoration: none;
+  background-color: #f0d355;
+  background-color: #f0d355;
+  color: #FFFFFF;
+}
+.projectsSection .projectTemplate .souqProjectPic {
+  background-image: linear-gradient(to right, rgba(125, 87, 99, 0.7), rgba(115, 176, 156, 0.8)), url("../images/souq_naql.gif");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 27rem 0;
+  text-align: center;
+}
+.projectsSection .projectTemplate .souqProjectPic a {
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  padding: 1rem 5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+}
+.projectsSection .projectTemplate .souqProjectPic a:hover {
+  text-decoration: none;
+  background-color: #f0d355;
+  background-color: #f0d355;
+  color: #FFFFFF;
+}
+.projectsSection .projectTemplate .souqWebProjectPic {
+  background-image: linear-gradient(to right, rgba(125, 87, 99, 0.7), rgba(115, 176, 156, 0.8)), url("../images/souq_naql_web.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 27rem 0;
+  text-align: center;
+}
+.projectsSection .projectTemplate .souqWebProjectPic a {
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  padding: 1rem 5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+}
+.projectsSection .projectTemplate .souqWebProjectPic a:hover {
+  text-decoration: none;
+  background-color: #f0d355;
+  background-color: #f0d355;
+  color: #FFFFFF;
+}
+.projectsSection .projectTemplate .rightProjectInfo {
+  padding: 0 5rem;
+}
+.projectsSection .projectTemplate .rightProjectInfo .projectText {
+  position: relative;
+}
+.projectsSection .projectTemplate .rightProjectInfo .projectText h4 {
+  background-color: #73b09c;
+  width: 35%;
+  padding: 0.5rem 0;
+  text-align: center;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-transform: capitalize;
+  border-radius: 4px;
+  font-size: 98%;
+  font-weight: lighter;
+  margin: 0;
+}
+.projectsSection .projectTemplate .rightProjectInfo .projectText h1 {
+  font-weight: lighter;
+  font-size: 300%;
+  margin: 0;
+  margin-top: 1rem;
+}
+.projectsSection .projectTemplate .rightProjectInfo .projectText p {
+  margin-top: 2rem;
+  line-height: 3rem;
+  font-size: 110%;
+  letter-spacing: 0.05rem;
+  font-weight: lighter;
+}
+.projectsSection .projectTemplate .rightProjectInfo .projectText h2 {
+  font-size: 140%;
+  font-weight: 500;
+  margin-top: 3rem;
+}
+.projectsSection .projectTemplate .rightProjectInfo .projectText .customerSpan {
+  display: block;
+  margin-top: 1rem;
+}
+.projectsSection .projectTemplate .rightProjectInfo .projectText .rateStars {
+  margin-top: 1rem;
+}
+.projectsSection .projectTemplate .rightProjectInfo .projectText .rateStars i {
+  color: #f0d355;
+  font-size: 150%;
+  padding-right: 0.3rem;
+}
+.projectsSection .projectTemplate .rightProjectInfo .projectText .rateStars .greyStar {
+  color: #797979;
+}
+.projectsSection .projectTemplate .rightProjectInfo .projectText .customerQuoteButton {
+  background-color: #73b09c;
+  color: #333333;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1rem 3rem;
+  outline: 0;
+  border: 0;
+  font-weight: bold;
+}
+.projectsSection .projectTemplate .rightProjectInfo .projectText .customerQuoteButton i {
+  font-size: 170%;
+  padding-left: 1rem;
+}
+.projectsSection .customerQuote {
+  background-color: #73b09c;
+  width: 100%;
+  display: none;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 5rem;
+}
+.projectsSection .customerQuote p {
+  width: 60%;
+  margin: 0 auto;
+  font-size: 130%;
+  line-height: 3rem;
+  font-style: italic;
+  font-weight: lighter;
+}
+.projectsSection .customerQuote p .quoteMark {
+  font-size: 300%;
+  font-weight: 400;
+}
+.projectsSection .customerQuote .customerName {
+  background-color: #FFFFFF;
+  color: #73b09c;
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.5rem 2rem;
+  font-weight: bold;
+}
+
+.projectsBrandingSection {
+  margin-bottom: 5rem;
+  position: relative;
+}
+.projectsBrandingSection .projectsHeading {
+  padding: 7rem 0 0rem 7rem;
+  margin-bottom: 3rem;
+}
+.projectsBrandingSection .brandingWorkList ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  position: relative;
+  z-index: 50;
+}
+.projectsBrandingSection .brandingWorkList ul li {
+  width: 26%;
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  padding: 0;
+  z-index: 50;
+}
+.projectsBrandingSection .brandingWorkList ul li img {
+  width: 100%;
+  opacity: 0.9;
+  transition: 0.5s ease-in-out;
+  /* &:active {
+      transform: scale(2);
+      -webkit-transform: scale(2);
+      opacity: 1;
+  } */
+}
+.projectsBrandingSection .brandingWorkList ul li .middle {
+  transition: .5s ease-in-out;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.projectsBrandingSection .brandingWorkList ul li .middle .text p {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 90%;
+  font-weight: lighter;
+  display: inline-block;
+  transition: all 0.5s ease-in-out;
+}
+.projectsBrandingSection .brandingWorkList ul li:active {
+  z-index: 60;
+}
+.projectsBrandingSection .brandingWorkList ul li:active .middle {
+  display: none;
+}
+.projectsBrandingSection .brandingWorkList ul li:hover img {
+  opacity: 1;
+}
+.projectsBrandingSection .brandingWorkList ul li:hover .middle {
+  opacity: 1;
+}
+.projectsBrandingSection .brandingWorkList .img-zoomer {
+  background-color: red;
+  text-align: center;
+  border: 6px solid #FFFFFF;
+  position: fixed;
+  top: 0;
+  left: 5;
+  right: 5;
+  margin: auto;
+  display: none;
+  border-radius: 10px;
+}
+.projectsBrandingSection .brandingWorkList .img-zoomer img {
+  width: 100%;
+  max-width: 100%;
+}
+.getInTouchSectionMargin {
+  margin-bottom: 3rem;
+}
+.getInTouchSection {
+  background-image: linear-gradient(to right, rgba(125, 87, 99, 0.5), rgba(115, 176, 156, 0.6)), url("../images/letdothis_bgImage.png");
+  height: auto;
+  overflow: hidden;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 12rem 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.getInTouchSection .subscriptionContent {
+  float: none;
+  margin: 0 auto;
+}
+.getInTouchSection .subscriptionContent h2 {
+  font-weight: lighter;
+  font-size: 300%;
+}
+.getInTouchSection .subscriptionContent p {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-size: 87%;
+}
+.getInTouchSection .subscriptionContent a {
+  color: #FFFFFF;
+  display: inline-block;
+  padding: 1rem 4rem;
+  font-weight: 400;
+  border: 1px solid #FFFFFF;
+  margin-top: 2rem;
+  transition: background 0.5s ease-in-out;
+}
+.getInTouchSection .subscriptionContent a i {
+  padding-left: 0.5rem;
+}
+.getInTouchSection .subscriptionContent a:hover {
+  background-color: #508b78;
+  text-decoration: none;
+}
+.getInTouchSection .subscriptionContent a:focus {
+  text-decoration: none;
+}
+.getInTouchSection .subscriptionContent a:active {
+  text-decoration: none;
+}
+
+.clientsSection {
+  padding-bottom: 3rem;
+}
+.clientsSection .ourClientsHeading {
+  padding: 7rem 0 0rem 7rem;
+  margin-bottom: 3rem;
+}
+.clientsSection .ourClientsList {
+  padding: 2rem 1rem;
+}
+.clientsSection .ourClientsList ul {
+  width: 100%;
+  list-style-type: none;
+  text-align: center;
+}
+.clientsSection .ourClientsList ul li {
+  width: 15%;
+  display: inline-block;
+  margin: 0 1rem;
+}
+.clientsSection .ourClientsList ul li img {
+  width: 85%;
+  max-width: 85%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: all 0.5s ease-in-out;
+}
+.clientsSection .ourClientsList ul li img:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+.socialFeedsSection .socialHeading {
+  padding: 7rem 0 0rem 7rem;
+  margin-bottom: 3rem;
+}
+.socialFeedsSection .socialMediaContent {
+  background-color: #FFFFFF;
+  height: auto;
+  overflow: hidden;
+  padding: 2rem;
+  padding-bottom: 0;
+  padding-top: 6rem;
+  box-shadow: 0px 0px 50px -22px #000;
+}
+.socialFeedsSection .socialMediaContent iframe {
+  border: none;
+  overflow: hidden;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+.socialFeedsSection .socialMediaContent .socialText {
+  color: #333333;
+  padding-bottom: 2rem;
+}
+.socialFeedsSection .socialMediaContent .socialText h2 {
+  font-size: 300%;
+  margin: 0;
+  font-weight: lighter;
+}
+.socialFeedsSection .socialMediaContent .socialText p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  line-height: 2.5rem;
+}
+.socialFeedsSection .socialMediaContent .socialText .socialMediaShare a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 100%;
+  width: 27%;
+  padding: 1rem 0;
+  font-weight: lighter;
+  border-radius: 6px;
+  color: #FFFFFF;
+  transition: all 0.5s ease-in-out;
+}
+.socialFeedsSection .socialMediaContent .socialText .socialMediaShare a i {
+  padding-right: 0.5rem;
+}
+.socialFeedsSection .socialMediaContent .socialText .socialMediaShare a:hover {
+  text-decoration: none;
+}
+.socialFeedsSection .socialMediaContent .socialText .socialMediaShare a:focus {
+  text-decoration: none;
+}
+.socialFeedsSection .socialMediaContent .socialText .socialMediaShare a:active {
+  text-decoration: none;
+}
+.socialFeedsSection .socialMediaContent .socialText .socialMediaShare .facebookShare {
+  background-color: #3b5998;
+}
+.socialFeedsSection .socialMediaContent .socialText .socialMediaShare .facebookShare:hover {
+  background-color: #5374b8;
+}
+.socialFeedsSection .socialMediaContent .socialText .socialMediaShare .linkedInShare {
+  background-color: #0084b1;
+}
+.socialFeedsSection .socialMediaContent .socialText .socialMediaShare .linkedInShare:hover {
+  background-color: #009ed4;
+}
+.socialFeedsSection .socialMediaContent .socialText .socialMediaShare .instagramShare {
+  background-color: #eb4152;
+}
+.socialFeedsSection .socialMediaContent .socialText .socialMediaShare .instagramShare:hover {
+  background-color: #eb7267;
+}
+.socialFeedsSection .socialMediaContent .socialText .socialMediaShare .twitterShare {
+  background-color: #1da1f2;
+}
+.socialFeedsSection .socialMediaContent .socialText .socialMediaShare .twitterShare:hover {
+  background-color: #5ab8f2;
+}
+
+.contactUsSecion {
+  width: 100%;
+  margin: 0;
+}
+.contactUsSecion .contactUsHeading {
+  padding: 7rem 0 0rem 7rem;
+  margin-bottom: 3rem;
+}
+.contactUsSecion .googleMap {
+  padding: 0;
+}
+.contactUsSecion .googleMap h2 {
+  color: #333333;
+  font-weight: lighter;
+  margin-left: 7rem;
+}
+.contactUsSecion .googleMap h2 span {
+  color: #73b09c;
+  font-weight: 400;
+}
+.contactUsSecion .googleMap .secondUnderline {
+  color: #73b09c;
+  margin-bottom: 1.7rem;
+  margin-left: 7rem;
+}
+.contactUsSecion .googleMap iframe {
+  width: 100%;
+  height: 70rem;
+}
+.contactUsSecion .contactingDetails {
+  padding: 5rem;
+  color: #333333;
+  background-image: url("../images/worldMap.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 60%;
+}
+.contactUsSecion .contactingDetails .contactParagraph {
+  font-size: 130%;
+  width: 85%;
+  margin-top: 1.6rem;
+  font-weight: lighter;
+  font-style: italic;
+}
+.contactUsSecion .contactingDetails #contactUsForm {
+  display: none;
+  margin-top: 2rem;
+}
+.contactUsSecion .contactingDetails #contactUsForm p input {
+  border-radius: 5px;
+  width: 80%;
+  padding: 1.2rem 2rem;
+  border: 0;
+  color: #777777;
+  outline: 0;
+  border: 1px solid #73b09c;
+  transition: all 0.5s ease-in-out;
+  border-radius: 5px;
+}
+.contactUsSecion .contactingDetails #contactUsForm p input:hover {
+  border-color: #508b78;
+  padding-left: 3rem;
+}
+.contactUsSecion .contactingDetails #contactUsForm p textarea {
+  width: 80%;
+  padding: 1.2rem 2rem;
+  border: 0;
+  outline: 0;
+  border: 1px solid #73b09c;
+  height: 13rem;
+  transition: all 0.5s ease-in-out;
+  border-radius: 5px;
+}
+.contactUsSecion .contactingDetails #contactUsForm p textarea:hover {
+  border-color: #508b78;
+  padding-left: 3rem;
+}
+.contactUsSecion .contactingDetails #contactUsForm button {
+  outline: 0;
+  border: 0;
+  padding: 0.8rem 3.2rem;
+  border-radius: 6px;
+  font-weight: bold;
+}
+.contactUsSecion .contactingDetails #contactUsForm .submitSubjectButton {
+  background-color: #73b09c;
+  color: #FFFFFF;
+  transition: all 0.5s ease-in-out;
+}
+.contactUsSecion .contactingDetails #contactUsForm .submitSubjectButton:hover {
+  background-color: #508b78;
+}
+.contactUsSecion .contactingDetails #contactUsForm .resetFieldsButton {
+  background-color: #333333;
+  color: #e1e1e1;
+  transition: all 0.5s ease-in-out;
+}
+.contactUsSecion .contactingDetails #contactUsForm .resetFieldsButton:hover {
+  background-color: #5a5a5a;
+}
+
+.footerSection {
+  padding-top: 7rem;
+  background-image: linear-gradient(to right, rgba(125, 87, 99, 0.5), rgba(115, 176, 156, 0.6)), url("../images/main_footer_bgImage.png");
+  height: auto;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footerSection .addressInfo {
+  color: #FFFFFF;
+}
+.footerSection .addressInfo h3 {
+  font-weight: lighter;
+  font-size: 170%;
+}
+.footerSection .addressInfo .addressHeadingUnderline {
+  color: #73b09c;
+  font-weight: bold;
+}
+.footerSection .addressInfo ul {
+  margin: 0;
+  list-style-type: none;
+  margin-top: 2rem;
+}
+.footerSection .addressInfo ul li {
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  font-weight: lighter;
+  transition: padding 0.5s ease-in-out;
+}
+.footerSection .addressInfo ul li i {
+  padding-right: 1rem;
+}
+.footerSection .addressInfo ul li:hover {
+  padding-left: 2rem;
+}
+.footerSection .footerNav {
+  color: #FFFFFF;
+}
+.footerSection .footerNav ul {
+  margin: 0;
+  margin-top: 1rem;
+  list-style-type: none;
+}
+.footerSection .footerNav ul li {
+  margin-bottom: 0.9rem;
+}
+.footerSection .footerNav ul li a {
+  text-transform: capitalize;
+  font-weight: lighter;
+  font-size: 105%;
+  color: #FFFFFF;
+  transition: all 0.3s ease-in-out;
+}
+.footerSection .footerNav ul li a:hover {
+  color: #73b09c;
+  text-decoration: none;
+  padding-left: 0.5rem;
+}
+.footerSection .footerNav ul li i {
+  padding-right: 0.7rem;
+  font-size: 80%;
+}
+.footerSection .logoAndSocial {
+  margin-top: 3.7rem;
+  text-align: left;
+}
+.footerSection .logoAndSocial .logoFooterBlock {
+  display: inline-block;
+}
+.footerSection .logoAndSocial .logoFooterBlock img {
+  width: 70%;
+  max-width: 70%;
+}
+.footerSection .logoAndSocial .socialIconsBlock {
+  text-align: left;
+  margin: 0 auto;
+}
+.footerSection .logoAndSocial .socialIconsBlock a i {
+  width: 3rem;
+  height: 3rem;
+  color: #000;
+  border-radius: 50%;
+  padding: 0.8rem;
+  margin: 0 0.3rem;
+  background-color: #FFFFFF;
+  transition: background 0.5s ease-in-out;
+}
+.footerSection .logoAndSocial .socialIconsBlock a .fa-facebook {
+  padding-left: 1.1rem;
+}
+.footerSection .logoAndSocial .socialIconsBlock a .fa-facebook:hover {
+  background-color: #4267b2;
+  color: #FFFFFF;
+}
+.footerSection .logoAndSocial .socialIconsBlock a .fa-twitter:hover {
+  background-color: #1da1f2;
+  color: #FFFFFF;
+}
+.footerSection .logoAndSocial .socialIconsBlock a .fa-instagram:hover {
+  background-color: #eb4152;
+  color: #FFFFFF;
+}
+.footerSection .logoAndSocial .socialIconsBlock a .fa-google-plus:hover {
+  background-color: #dc4e41;
+  color: #FFFFFF;
+}
+.footerSection .logoAndSocial .socialIconsBlock a .fa-linkedin:hover {
+  background-color: #0084b1;
+  color: #FFFFFF;
+}
+.footerSection .copyrightsFooter {
+  text-align: center;
+  color: #FFFFFF;
+  opacity: 0.9;
+  font-size: 100%;
+  font-weight: lighter;
+  padding: 2rem 0;
+  padding-top: 4rem;
+  transition: all 0.5s ease-in-out;
+}
+.footerSection .copyrightsFooter a {
+  color: #73b09c;
+  text-decoration: none;
+  transition: color 0.5s ease-in-out;
+}
+.footerSection .copyrightsFooter a:hover {
+  color: #51d7aa;
+}
+
+/* Schedule a Call Page Styling */
+.headerContentSchedule {
+  color: #FFFFFF;
+}
+.headerContentSchedule .topPanel {
+  padding-top: 3rem;
+  /*padding-bottom: 3rem;*/
+  /*box-shadow: 0px 0px 50px -22px #000;*/
+  /*background-color: #FFFFFF;*/
+}
+.headerContentSchedule .topPanel .logoBlock img {
+  width: 70%;
+  max-width: 70%;
+}
+.headerContentSchedule .topPanel .navMenuIcon {
+  padding-top: 1rem;
+}
+.headerContentSchedule .topPanel .navMenuIcon a {
+  color: #333333;
+  font-size: 120%;
+  font-weight: 500;
+}
+.headerContentSchedule .topPanel .navMenuIcon a span {
+  padding-right: 1rem;
+}
+.headerContentSchedule .topPanel .navMenuIcon a:hover {
+  text-decoration: none;
+}
+.headerContentSchedule .topPanel .navMenuIcon a:focus {
+  text-decoration: none;
+}
+.headerContentSchedule .topPanel .navMenuIcon a:active {
+  text-decoration: none;
+}
+.headerContentSchedule .mainNavMenu {
+  display: none;
+  margin-top: 1rem;
+  padding: 2.5rem 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  position: relative;
+  border-radius: 10px;
+}
+.headerContentSchedule .mainNavMenu ul {
+  list-style-type: none;
+  margin: 0;
+}
+.headerContentSchedule .mainNavMenu ul li {
+  display: inline-block;
+  padding: 0 2.2rem;
+}
+.headerContentSchedule .mainNavMenu ul li i {
+  padding-right: 0.7rem;
+  font-size: 92%;
+}
+.headerContentSchedule .mainNavMenu ul li a {
+  font-size: 110%;
+  color: #FFFFFF;
+  font-weight: lighter;
+  text-transform: capitalize;
+  transition: color 0.5s ease-in-out;
+}
+.headerContentSchedule .mainNavMenu ul li a:hover {
+  color: #73b09c;
+  text-decoration: none;
+}
+.headerContentSchedule .mainNavMenu ul li a:active {
+  text-decoration: none;
+}
+.headerContentSchedule .mainNavMenu ul li a:focus {
+  text-decoration: none;
+}
+
+.scheduleACall {
+  background-color: #FFFFFF;
+  padding: 10rem 10rem;
+  margin-top: 3rem;
+  box-shadow: 0px 0px 50px -26px #000;
+  position: relative;
+}
+.scheduleACall .tapShoulderParagraph h1 {
+  font-size: 400%;
+  font-weight: lighter;
+}
+.scheduleACall .tapShoulderParagraph span {
+  display: block;
+  margin-bottom: 0.3rem;
+  margin-top: 0.3rem;
+}
+.scheduleACall .tapShoulderParagraph span i {
+  font-size: 110%;
+  padding-right: 1rem;
+}
+.scheduleACall .tapShoulderParagraph .socialIcons {
+  color: #333333;
+  font-size: 150%;
+  margin-top: 2rem;
+}
+.scheduleACall .tapShoulderParagraph .socialIcons a {
+  padding: 0 0.7rem;
+  color: #333333;
+  transition: color 0.5s ease-in-out;
+}
+.scheduleACall .tapShoulderParagraph .socialIcons a:hover {
+  text-decoration: none;
+  color: #73b09c;
+}
+.scheduleACall .scheduleForm h3 {
+  color: #333333;
+  font-family: 'Sans';
+}
+.scheduleACall .scheduleForm h3 button {
+  font-family: 'Sans';
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+  color: #73b09c;
+  transition: all 0.5s ease-in-out;
+}
+.scheduleACall .scheduleForm h3 button:hover {
+  text-decoration: none;
+  color: #127d49;
+}
+.scheduleACall .scheduleForm form {
+  margin-top: 2rem;
+}
+.scheduleACall .scheduleForm form input {
+  width: 40%;
+  margin-right: 4rem;
+  margin-top: 2rem;
+  padding: 2.2rem 0;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid #868686;
+}
+.scheduleACall .scheduleForm form input:focus {
+  border-bottom: 2px solid #73b09c;
+}
+.scheduleACall .scheduleForm form textarea {
+  width: 87.5%;
+  margin-right: 4rem;
+  margin-top: 2rem;
+  padding: 2.2rem 0;
+  padding-bottom: 14rem;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid #868686;
+}
+.scheduleACall .scheduleForm form textarea:focus {
+  border-bottom: 2px solid #73b09c;
+}
+.scheduleACall .scheduleForm form button {
+  padding: 1rem 10rem;
+  margin-right: 8rem;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  margin-top: 3rem;
+  background-color: #73b09c;
+  color: #fff;
+  transition: background 0.5s ease-in-out;
+}
+.scheduleACall .scheduleForm form button:hover {
+  background-color: #579984;
+  color: #FFFFFF;
+}
+.scheduleACall .scheduleForm form ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #000;
+  font-size: 85%;
+  font-weight: 500;
+}
+.scheduleACall .scheduleForm form ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #000;
+  font-size: 85%;
+  font-weight: 500;
+}
+.scheduleACall .scheduleForm form :-ms-input-placeholder {
+  /* IE 10+ */
+  color: #000;
+  font-size: 85%;
+  font-weight: 500;
+}
+.scheduleACall .scheduleForm form :-moz-placeholder {
+  /* Firefox 18- */
+  color: #000;
+  font-size: 85%;
+  font-weight: 500;
+}
+
+.popUpSchedule {
+  background-color: red;
+  padding: 6rem 0;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 30px -10px #000;
+  text-align: center;
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  right: 0;
+  display: none;
+}
+.popUpSchedule .exitButton {
+  height: 4rem;
+  width: 4rem;
+  background-color: #73b09c;
+  padding-top: 0.85rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.popUpSchedule .exitButton span {
+  color: #333333;
+  font-weight: bold;
+}
+.popUpSchedule .scheduleHeading h1 {
+  color: #73b09c;
+  font-weight: lighter;
+  font-size: 300%;
+}
+.popUpSchedule .scheduleHeading .firstUnderline {
+  margin-left: 0;
+}
+.popUpSchedule .reservationForm form input {
+  width: 40%;
+  margin-right: 4rem;
+  margin-top: 2rem;
+  padding: 2.2rem 0;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid #868686;
+}
+.popUpSchedule .reservationForm form input:focus {
+  border-bottom: 2px solid #73b09c;
+}
+.popUpSchedule .reservationForm form button {
+  padding: 1rem 10rem;
+  margin-right: 0;
+  background-color: #73b09c;
+  outline: 0;
+  border: 0;
+  margin-top: 4rem;
+  color: #FFFFFF;
+  transition: background 0.5s ease-in-out;
+}
+.popUpSchedule .reservationForm form button:hover {
+  background-color: #579984;
+  color: #FFFFFF;
+}
+
+.schedulePopUp {
+  padding: 6rem 0;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 30px -10px #000;
+  text-align: center;
+  position: absolute;
+}
+.schedulePopUp h1 {
+  color: #73b09c;
+  font-weight: lighter;
+  font-size: 300%;
+}
+.schedulePopUp .firstUnderline {
+  margin-left: 0;
+}
+.schedulePopUp .meetingForm form input {
+  width: 40%;
+  margin-right: 4rem;
+  margin-top: 2rem;
+  padding: 2.2rem 0;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid #868686;
+}
+.schedulePopUp .meetingForm form input:focus {
+  border-bottom: 2px solid #73b09c;
+}
+.schedulePopUp .meetingForm form button {
+  padding: 1rem 10rem;
+  margin-right: 0;
+  background-color: #73b09c;
+  outline: 0;
+  border: 0;
+  margin-top: 4rem;
+  color: #FFFFFF;
+  transition: background 0.5s ease-in-out;
+}
+.schedulePopUp .meetingForm form button:hover {
+  background-color: #579984;
+  color: #FFFFFF;
+}
+
+/* Project Details Page Styles */
+.projectHeaderSection {
+  overflow: hidden;
+  /*height: 100vh;*/
+  background: linear-gradient(to right, rgba(125, 87, 99, 0.7), rgba(115, 176, 156, 0.8)), url("../images/souq_naql_bg.png");
+  background-size: cover;
+  padding-bottom: 5rem;
+}
+.projectHeaderSection .headerContent {
+  color: #FFFFFF;
+  position: relative;
+  z-index: 11;
+}
+.projectHeaderSection .headerContent .topPanel {
+  padding-top: 3rem;
+}
+.projectHeaderSection .headerContent .topPanel .logoBlock img {
+  width: 70%;
+  max-width: 70%;
+}
+.projectHeaderSection .headerContent .topPanel .navMenuIcon {
+  padding-top: 1rem;
+}
+.projectHeaderSection .headerContent .topPanel .navMenuIcon a {
+  color: #FFFFFF;
+  font-size: 120%;
+  font-weight: 500;
+}
+.projectHeaderSection .headerContent .topPanel .navMenuIcon a span {
+  padding-right: 1rem;
+}
+.projectHeaderSection .headerContent .topPanel .navMenuIcon a:hover {
+  text-decoration: none;
+}
+.projectHeaderSection .headerContent .topPanel .navMenuIcon a:focus {
+  text-decoration: none;
+}
+.projectHeaderSection .headerContent .topPanel .navMenuIcon a:active {
+  text-decoration: none;
+}
+.projectHeaderSection .headerContent .mainNavMenu {
+  display: none;
+  margin-top: 1rem;
+  padding: 2.5rem 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  position: absolute;
+  border-radius: 10px;
+  z-index: 15;
+}
+.projectHeaderSection .headerContent .mainNavMenu ul {
+  list-style-type: none;
+  margin: 0;
+}
+.projectHeaderSection .headerContent .mainNavMenu ul li {
+  display: inline-block;
+  padding: 0 2.2rem;
+}
+.projectHeaderSection .headerContent .mainNavMenu ul li i {
+  padding-right: 0.7rem;
+  font-size: 92%;
+}
+.projectHeaderSection .headerContent .mainNavMenu ul li a {
+  font-size: 110%;
+  color: #FFFFFF;
+  font-weight: lighter;
+  text-transform: capitalize;
+  transition: color 0.5s ease-in-out;
+}
+.projectHeaderSection .headerContent .mainNavMenu ul li a:hover {
+  color: #73b09c;
+  text-decoration: none;
+}
+.projectHeaderSection .headerContent .mainNavMenu ul li a:active {
+  text-decoration: none;
+}
+.projectHeaderSection .headerContent .mainNavMenu ul li a:focus {
+  text-decoration: none;
+}
+.projectHeaderSection .headerContent .projectDescription {
+  display: block;
+  padding-top: 11rem;
+  margin-bottom: 30rem;
+}
+.projectHeaderSection .headerContent .projectDescription .projectLogo {
+  text-align: center;
+}
+.projectHeaderSection .headerContent .projectDescription .projectLogo img {
+  background-color: #FFFFFF;
+  width: 70%;
+  border-radius: 50%;
+  padding: 0.6rem;
+  box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease-in-out;
+  position: relative;
+}
+.projectHeaderSection .headerContent .projectDescription .projectLogo img:hover {
+  box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.5);
+}
+.projectHeaderSection .headerContent .projectDescription .projectHint h1 {
+  font-size: 320%;
+  font-weight: lighter;
+  margin: 0;
+}
+.projectHeaderSection .headerContent .projectDescription .projectHint p {
+  font-weight: lighter;
+  font-size: 110%;
+  margin-top: 1rem;
+}
+.projectHeaderSection .headerContent .projectDescription .projectHint .headerLink {
+  left: 0;
+  display: block;
+}
+.projectHeaderSection .headerContent .downArrows {
+  text-align: center;
+  margin-top: 4rem;
+}
+.projectHeaderSection .headerContent .downArrows a {
+  color: #FFFFFF;
+  font-size: 400%;
+}
+
+.projectMockup {
+  padding-bottom: 4rem;
+}
+.projectMockup .workProjectHeading {
+  padding: 5rem 0 2rem 7rem;
+}
+.projectMockup .mockUpPicture {
+  text-align: center;
+}
+.projectMockup .mockUpPicture img {
+  width: 70%;
+  margin-bottom: 6rem;
+  border-radius: 9px;
+  box-shadow: 20px 20px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.projectDetailsGetInTouch {
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .headerLink {
+    width: 90%;
+  }
+
+  .headerSection .headerContent .headerText {
+    padding-left: 4rem;
+    padding-top: 8rem;
+  }
+  .headerSection .headerContent .headerText .textArea h1 {
+    font-size: 300%;
+    position: relative;
+    left: -800px;
+  }
+  .headerSection .headerContent .headerText .textArea p {
+    font-size: 110%;
+    font-weight: lighter;
+    line-height: 2.6rem;
+    font-style: italic;
+    position: relative;
+    left: -800px;
+  }
+  .headerSection .headerContent .headerText .textArea p strong {
+    color: #73b09c;
+  }
+
+  .projectHeaderSection {
+    background-size: cover;
+    height: auto;
+  }
+
+  .aboutUsSection .ceoProfile h3 {
+    width: 100%;
+    margin: 0 auto;
+    font-weight: 500;
+    letter-spacing: 0.3rem;
+    font-weight: lighter;
+    line-height: 2rem;
+    text-transform: uppercase;
+    font-size: 100%;
+    margin-top: 1rem;
+  }
+  .aboutUsSection .aboutText h3 {
+    width: 90%;
+    font-size: 130%;
+  }
+  .aboutUsSection .aboutText p {
+    width: 90%;
+    font-weight: lighter;
+    font-size: 120%;
+  }
+
+  .servicesSection .servicesIcons {
+    width: 100% !important;
+  }
+  .servicesSection .servicesIcons .servicesList li {
+    margin-top: 3rem;
+    width: 20%;
+  }
+  .servicesSection .servicesIcons .servicesList li .serviceInfo span {
+    width: 85%;
+  }
+  .servicesSection .pickUs {
+    width: 100% !important;
+  }
+  .servicesSection .pickUs h3 {
+    font-size: 240%;
+  }
+  .servicesSection .pickUs ul li {
+    font-size: 120%;
+  }
+
+  .projectsSection .projectTemplate {
+    margin-top: 4rem;
+  }
+  .projectsSection .projectTemplate .rightProjectInfo .projectText h4 {
+    width: 60%;
+    font-size: 110%;
+  }
+  .projectsSection .projectTemplate .rightProjectInfo .projectText p {
+    font-size: 120%;
+  }
+  .projectsSection .projectTemplate .rightProjectInfo .projectText .customerSpan {
+    display: inline-block;
+    margin-top: 1rem;
+  }
+  .projectsSection .projectTemplate .rightProjectInfo .projectText .rateStars {
+    margin-top: 1rem;
+    display: inline-block;
+    margin-left: 2rem;
+  }
+
+  .projectsBrandingSection .brandingWorkList ul li {
+    width: 42%;
+  }
+
+  .getInTouchSection {
+    background-size: cover;
+  }
+  .getInTouchSection .subscriptionContent p {
+    font-size: 93%;
+  }
+  .getInTouchSection .subscriptionContent a {
+    padding: 1rem 7rem;
+    font-size: 115%;
+  }
+
+  .clientsSection {
+    padding-bottom: 0;
+  }
+  .clientsSection .ourClientsList {
+    padding: 1rem 1rem;
+  }
+
+  .socialFeedsSection .socialMediaContent .socialText p {
+    font-size: 110%;
+  }
+  .socialFeedsSection .socialMediaContent .socialText .socialMediaShare a {
+    font-size: 110%;
+    width: 43%;
+  }
+}
+@media screen and (max-width: 950px) {
+  .headerLink {
+    width: 70%;
+  }
+
+  .headerSection .headerContent .topPanel .logoBlock img {
+    width: 82%;
+    max-width: 82%;
+  }
+  .headerSection .headerContent .mainNavMenu {
+    margin-top: 1rem;
+    padding: 2.5rem 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 15;
+    left: 0;
+    right: 0;
+  }
+  .headerSection .headerContent .mainNavMenu ul li {
+    padding: 0 1rem;
+  }
+  .headerSection .headerContent .mainNavMenu ul li i {
+    padding-right: 0.7rem;
+    font-size: 87%;
+  }
+  .headerSection .headerContent .mainNavMenu ul li a {
+    font-size: 100%;
+  }
+  .headerSection .headerContent .headerText {
+    padding-left: 2rem;
+    padding-top: 1.7rem;
+  }
+  .headerSection .headerContent .headerText .textArea h1 {
+    font-size: 300%;
+    position: relative;
+    left: -800px;
+  }
+  .headerSection .headerContent .headerText .textArea p {
+    font-size: 110%;
+    font-weight: lighter;
+    line-height: 2.6rem;
+    font-style: italic;
+    position: relative;
+    left: -800px;
+  }
+  .headerSection .headerContent .headerText .textArea p strong {
+    color: #73b09c;
+  }
+
+  .headerContentSchedule .topPanel .logoBlock img {
+    width: 82%;
+    max-width: 82%;
+  }
+  .headerContentSchedule .mainNavMenu {
+    margin-top: 1rem;
+    padding: 2.5rem 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 15;
+    left: 0;
+    right: 0;
+  }
+  .headerContentSchedule .mainNavMenu ul li {
+    padding: 0 1rem;
+  }
+  .headerContentSchedule .mainNavMenu ul li i {
+    padding-right: 0.7rem;
+    font-size: 87%;
+  }
+  .headerContentSchedule .mainNavMenu ul li a {
+    font-size: 100%;
+  }
+
+  .projectHeaderSection .headerContent .topPanel .logoBlock img {
+    width: 82%;
+    max-width: 82%;
+  }
+  .projectHeaderSection .headerContent .mainNavMenu {
+    margin-top: 1rem;
+    padding: 2.5rem 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 15;
+    left: 0;
+    right: 0;
+  }
+  .projectHeaderSection .headerContent .mainNavMenu ul li {
+    padding: 0 1rem;
+  }
+  .projectHeaderSection .headerContent .mainNavMenu ul li i {
+    padding-right: 0.7rem;
+    font-size: 87%;
+  }
+  .projectHeaderSection .headerContent .mainNavMenu ul li a {
+    font-size: 100%;
+  }
+  .projectHeaderSection .headerContent .projectDescription {
+    padding-left: 2rem;
+  }
+  .projectHeaderSection .headerContent .projectDescription .projectLogo {
+    width: 20%;
+    float: left;
+  }
+  .projectHeaderSection .headerContent .projectDescription .projectLogo img {
+    width: 80%;
+  }
+  .projectHeaderSection .headerContent .projectDescription .projectHint {
+    width: 70%;
+    float: left;
+    margin-left: 2rem;
+  }
+
+  .aboutUsSection .ceoProfile h3 {
+    width: 100%;
+    margin: 0 auto;
+    font-weight: 500;
+    letter-spacing: 0.3rem;
+    font-weight: lighter;
+    line-height: 2rem;
+    text-transform: uppercase;
+    font-size: 100%;
+    margin-top: 1rem;
+  }
+  .aboutUsSection .aboutText {
+    padding-top: 3rem;
+  }
+  .aboutUsSection .aboutText h3 {
+    width: 90%;
+    font-size: 130%;
+  }
+  .aboutUsSection .aboutText p {
+    width: 90%;
+    font-weight: lighter;
+    font-size: 120%;
+  }
+
+  .servicesSection .servicesIcons {
+    width: 100% !important;
+  }
+  .servicesSection .servicesIcons .servicesList li {
+    margin-top: 3rem;
+    width: 28%;
+  }
+  .servicesSection .servicesIcons .servicesList li .serviceInfo span {
+    width: 85%;
+  }
+  .servicesSection .pickUs {
+    width: 100% !important;
+  }
+  .servicesSection .pickUs h3 {
+    font-size: 240%;
+  }
+  .servicesSection .pickUs ul li {
+    font-size: 120%;
+  }
+
+  .projectsSection .projectTemplate {
+    margin-top: 4rem;
+  }
+  .projectsSection .projectTemplate .pull-image-right {
+    width: 100%;
+    float: none;
+    clear: right;
+  }
+  .projectsSection .projectTemplate .rightProjectInfo .projectText h4 {
+    width: 60%;
+    font-size: 110%;
+    margin-top: 2rem;
+  }
+  .projectsSection .projectTemplate .rightProjectInfo .projectText p {
+    font-size: 120%;
+  }
+  .projectsSection .projectTemplate .rightProjectInfo .projectText .customerSpan {
+    display: inline-block;
+    margin-top: 1rem;
+  }
+  .projectsSection .projectTemplate .rightProjectInfo .projectText .rateStars {
+    margin-top: 1rem;
+    display: inline-block;
+    margin-left: 2rem;
+  }
+
+  .clientsSection .ourClientsList {
+    padding: 2rem 1rem;
+  }
+  .clientsSection .ourClientsList ul {
+    text-align: left;
+  }
+  .clientsSection .ourClientsList ul li {
+    width: 24%;
+    margin: 0 0rem;
+  }
+
+  .socialFeedsSection .socialMediaContent .socialText p {
+    font-size: 110%;
+  }
+  .socialFeedsSection .socialMediaContent .socialText .socialMediaShare a {
+    font-size: 110%;
+    width: 43%;
+    font-weight: 400;
+  }
+}
+@media screen and (max-width: 730px) {
+  .headerLink {
+    display: none;
+  }
+}
+@media screen and (max-width: 670px) {
+  .mainHeading {
+    font-size: 200%;
+  }
+
+  .aboutUsHeading, .servicesHeading, .projectsHeading,
+  .ourClientsHeading, .socialHeading, .workProjectHeading {
+    padding-left: 4rem !important;
+    padding-top: 4rem !important;
+  }
+
+  .firstUnderline {
+    margin-left: 2rem;
+    font-size: 60%;
+  }
+
+  .secondUnderline {
+    font-size: 80%;
+  }
+
+  .headerLink {
+    display: none;
+  }
+
+  .headerSection {
+    background-image: url("../images/mobile_bg.png");
+   ackground-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    height: auto;
+  }
+  .headerSection video {
+    display: none;
+  }
+  .headerSection .headerContent {
+    position: relative;
+  }
+  .headerSection .headerContent .topPanel .logoBlock {
+    width: 70% !important;
+  }
+  .headerSection .headerContent .topPanel .logoBlock img {
+    width: 70%;
+    max-width: 70%;
+  }
+  .headerSection .headerContent .topPanel .navMenuIcon {
+    padding-top: 0.5rem;
+    width: 30% !important;
+  }
+  .headerSection .headerContent .topPanel .navMenuIcon a span {
+    display: none;
+  }
+  .headerSection .headerContent .topPanel .navMenuIcon a img {
+    float: right;
+  }
+  .headerSection .headerContent .mainNavMenu {
+    border-radius: 0;
+    position: fixed;
+    padding: 1.5rem 0;
+  }
+  .headerSection .headerContent .mainNavMenu ul li {
+    display: block;
+    padding: 1.5rem 2.2rem;
+    border-bottom: 1px solid #343e38;
+  }
+  .headerSection .headerContent .mainNavMenu ul li:last-child {
+    border: 0;
+  }
+  .headerSection .headerContent .mainNavMenu ul li:hover {
+    background-color: #73b09c;
+  }
+  .headerSection .headerContent .mainNavMenu ul li a {
+    font-size: 110%;
+  }
+  .headerSection .headerContent .mainNavMenu ul li a:hover {
+    color: #FFFFFF;
+  }
+  .headerSection .headerContent .headerText {
+    padding-left: 1.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .headerSection .headerContent .headerText .textArea h1 {
+    font-size: 230%;
+  }
+  .headerSection .headerContent .headerText .textArea p {
+    font-size: 90%;
+    font-weight: lighter;
+  }
+
+  .headerContentSchedule .topPanel .logoBlock {
+    width: 70% !important;
+  }
+  .headerContentSchedule .topPanel .logoBlock img {
+    width: 70%;
+    max-width: 70%;
+  }
+  .headerContentSchedule .topPanel .navMenuIcon {
+    padding-top: 0.5rem;
+    width: 30% !important;
+  }
+  .headerContentSchedule .topPanel .navMenuIcon a span {
+    display: none;
+  }
+  .headerContentSchedule .topPanel .navMenuIcon a img {
+    float: right;
+  }
+  .headerContentSchedule .mainNavMenu {
+    border-radius: 0;
+    position: fixed;
+    padding: 1.5rem 0;
+  }
+  .headerContentSchedule .mainNavMenu ul li {
+    display: block;
+    padding: 1.5rem 2.2rem;
+    border-bottom: 1px solid #343e38;
+  }
+  .headerContentSchedule .mainNavMenu ul li:last-child {
+    border: 0;
+  }
+  .headerContentSchedule .mainNavMenu ul li:hover {
+    background-color: #73b09c;
+  }
+  .headerContentSchedule .mainNavMenu ul li a {
+    font-size: 110%;
+  }
+  .headerContentSchedule .mainNavMenu ul li a:hover {
+    color: #FFFFFF;
+  }
+
+  .projectHeaderSection .headerContent {
+    position: relative;
+  }
+  .projectHeaderSection .headerContent .topPanel .logoBlock {
+    width: 70% !important;
+  }
+  .projectHeaderSection .headerContent .topPanel .logoBlock img {
+    width: 70%;
+    max-width: 70%;
+  }
+  .projectHeaderSection .headerContent .topPanel .navMenuIcon {
+    padding-top: 0.5rem;
+    width: 30% !important;
+  }
+  .projectHeaderSection .headerContent .topPanel .navMenuIcon a span {
+    display: none;
+  }
+  .projectHeaderSection .headerContent .topPanel .navMenuIcon a img {
+    float: right;
+  }
+  .projectHeaderSection .headerContent .mainNavMenu {
+    border-radius: 0;
+    position: fixed;
+    padding: 1.5rem 0;
+  }
+  .projectHeaderSection .headerContent .mainNavMenu ul li {
+    display: block;
+    padding: 1.5rem 2.2rem;
+    border-bottom: 1px solid #343e38;
+  }
+  .projectHeaderSection .headerContent .mainNavMenu ul li:last-child {
+    border: 0;
+  }
+  .projectHeaderSection .headerContent .mainNavMenu ul li:hover {
+    background-color: #73b09c;
+  }
+  .projectHeaderSection .headerContent .mainNavMenu ul li a {
+    font-size: 110%;
+  }
+  .projectHeaderSection .headerContent .mainNavMenu ul li a:hover {
+    color: #FFFFFF;
+  }
+  .projectHeaderSection .headerContent .projectDescription {
+    padding-left: 2rem;
+    margin-bottom: 0;
+    margin-top: 1rem;
+    padding-top: 6rem;
+  }
+  .projectHeaderSection .headerContent .projectDescription .projectLogo {
+    text-align: left;
+    margin-left: 1.2rem;
+    width: 100%;
+    float: none;
+  }
+  .projectHeaderSection .headerContent .projectDescription .projectLogo img {
+    width: 30%;
+  }
+  .projectHeaderSection .headerContent .projectDescription .projectHint {
+    margin-top: 2rem;
+    width: 100%;
+    float: none;
+    margin-left: 2rem;
+  }
+  .projectHeaderSection .headerContent .projectDescription .projectHint p {
+    padding-right: 3rem;
+  }
+  .projectHeaderSection .headerContent .projectDescription .projectHint .headerLink {
+    width: 75%;
+    padding: 1rem 1.2rem;
+  }
+
+  .projectsBrandingSection .brandingWorkList ul li {
+    width: 100%;
+  }
+
+  .aboutUsSection .ceoProfile h3 {
+    width: 80%;
+  }
+  .aboutUsSection .aboutText {
+    padding-top: 3rem;
+    padding-left: 3rem;
+  }
+  .aboutUsSection .aboutText h1 {
+    font-size: 270%;
+  }
+  .aboutUsSection .aboutText h3 {
+    width: 90%;
+    font-size: 130%;
+  }
+
+  .servicesSection .servicesIcons {
+    width: 100% !important;
+  }
+  .servicesSection .servicesIcons .servicesList li {
+    margin-top: 2rem;
+    width: 43%;
+  }
+  .servicesSection .servicesIcons .servicesList li .serviceInfo h3 {
+    font-size: 120%;
+  }
+  .servicesSection .servicesIcons .servicesList li .serviceInfo span {
+    width: 95%;
+  }
+  .servicesSection .pickUs h3 {
+    font-size: 230%;
+  }
+  .servicesSection .pickUs ul li {
+    font-size: 110%;
+  }
+
+  .projectsSection .projectTemplate .pull-image-right {
+    width: 100%;
+    float: none;
+    clear: right;
+  }
+  .projectsSection .projectTemplate .rightProjectInfo .projectText h4 {
+    width: 90%;
+    font-size: 117%;
+  }
+
+  .clientsSection .ourClientsList {
+    padding: 0rem 1rem;
+  }
+  .clientsSection .ourClientsList ul {
+    text-align: center;
+  }
+  .clientsSection .ourClientsList ul li {
+    width: 45%;
+    margin: 0 0rem;
+  }
+
+  .socialFeedsSection .socialMediaContent .socialText p {
+    font-size: 110%;
+  }
+  .socialFeedsSection .socialMediaContent .socialText .socialMediaShare {
+    text-align: center;
+  }
+  .socialFeedsSection .socialMediaContent .socialText .socialMediaShare a {
+    font-size: 110%;
+    width: 100%;
+    font-weight: 400;
+  }
+
+  .scheduleACall .scheduleForm form input {
+    width: 100%;
+    margin-right: 0;
+  }
+  .scheduleACall .scheduleForm form textarea {
+    width: 100%;
+  }
+  .scheduleACall .scheduleForm form button {
+    margin-right: 0;
+    display: block;
+    padding: 1rem 0;
+    width: 100%;
+  }
+}
+
+.panel {
+        position: relative;
+    }
+    .edit-template {
+        position: fixed;
+        top: 10rem;
+        left: 20rem;
+        right: 20rem;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0px 0px 100px -26px #000; 
+        text-align: center; 
+        padding: 4rem 0;
+        z-index: 200;
+        display: none;
+    }
+    .edit-template h1 {
+        text-transform: capitalize;
+        font-weight: lighter;
+        font-size: 300%;
+        margin: 0;
+    }
+    .edit-template span {
+        font-weight: bold;
+        color: lightskyblue;
+    }
+    .edit-template p {
+        margin: 10rem 0;
+    }
+    #nextEdit {
+        background-color: lightskyblue;
+        color: #fff;
+        border: 0;
+        outline: 0;
+        border-radius: 5px;
+        padding: 0.5rem 4rem;
+    }
+    #cancelEdit {
+        background-color: lightcoral;
+        color: #fff;
+        border: 0;
+        outline: 0;
+        border-radius: 5px;
+        padding: 0.5rem 4rem;
+    }
+/*# sourceMappingURL=style.css.map */

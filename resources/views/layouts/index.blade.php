@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ app()->getLocale() }}">
+<head>
+    <meta charset="utf-8" />
+    <title>@yield('title')</title>
+    <!-- Website search engine information -->
+    <meta name="description" content="Piercodes - Software and digital marketing agency for high-quality website, mobile and software products." />
+    <meta name="keywords" content="Piercodes, pier, codes, software, agency, digital, marketing, websites, design, development, mobile, application, seo, search, engine, optimization, improve, business, developers" />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/jquery.lighter.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+    <!-- JavaScript files -->
+    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/jquery.lighter.js') }}"></script>
+    <script src="{{ asset('js/main.js') }}"></script>
+</head>
+<body>
+    <div id="app">
+        @yield('content')        
+        
+    </div>
+</body>
+@stack('scripts')
+</html>
