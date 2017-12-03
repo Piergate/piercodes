@@ -1,8 +1,9 @@
 @extends('layouts.index')
-{{-- @section('title', 'product name') --}}
+@section('title', "$product->title")
 
 @section('content')
-<header class="projectHeaderSection" style="  background: linear-gradient(to right, rgba(125, 87, 99, 0.7), rgba(115, 176, 156, 0.8)), url({{ asset('app-images/'.$product->image->background)}});">
+<header class="projectHeaderSection" style="  background: linear-gradient(to right, rgba(125, 87, 99, 0.7), rgba(115, 176, 156, 0.8)),
+ url({{ asset('app-images/'.$product->image->background)}});">
 	<!-- Main Project Header Content Generic Div -->
 	<div class="headerContent container">
 		<!-- Logo and Navigation Menu Top Panel -->
@@ -16,7 +17,7 @@
 				<div class="col-md-2">
 					<div data-aos="fade-right" data-aos-duration="900" class="projectLogo">
 
-						<img src="{{ asset("app-images/{$product->image->logo} ") }}" alt="Souq Naql Logo" />
+						<img src="{{ url("app-images/{$product->image->logo} ") }}" alt="Souq Naql Logo" />
 					</div>
 				</div>
 				<div class="col-md-6">
