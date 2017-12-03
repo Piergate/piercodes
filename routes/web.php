@@ -6,7 +6,7 @@ Route::get('/product_details/{product}', 'ProductsController@index');
 
 Route::group(['middleware' => ['auth']], function () {
 	Route::view('/adminpanel', 'admin.adminpanel');
-	Route::get('/add', 'ProductsController@create');
+	// Route::get('/add', 'ProductsController@create');
 	Route::post('/addproject', 'ProductsController@store');
 });
 
