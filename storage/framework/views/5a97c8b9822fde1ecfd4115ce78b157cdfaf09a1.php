@@ -12,7 +12,8 @@
 				<div class="col-md-2"></div>
 				<div class="col-md-2">
 					<div data-aos="fade-right" data-aos-duration="900" class="projectLogo">
-						<img src="<?php echo e(asset('app-images/'.$product->image->logo)); ?>" alt="Souq Naql Logo" />
+
+						<img src="<?php echo e(asset("app-images/{$product->image->logo} ")); ?>" alt="Souq Naql Logo" />
 					</div>
 				</div>
 				<div class="col-md-6">
@@ -46,7 +47,7 @@
 		<!-- Project Main Mockup Picture -->
 		<div class="row">
 			<div class="mockUpPicture">
-				<img data-aos="fade-right" data-aos-duration="900" src="<?php echo e(asset('app-images/'.$product->image->mockup)); ?>" alt="<?php echo e($product->title); ?> Mockup" />
+				<img data-aos="fade-right" data-aos-duration="900" src="<?php echo e(asset("app-images/{$product->image->mockup}" )); ?>" alt="<?php echo e($product->title); ?> Mockup" />
 			</div>
 		</div>
 
@@ -62,7 +63,7 @@
 		<div class="row">
 			<div data-aos="fade-left" data-aos-duration="900" class="mockUpPicture">
 				
-				<img src="<?php echo e(asset('app-images/'.$product->image->branding)); ?>" alt="<?php echo e($product->title); ?> Branding" />
+				<img src="<?php echo e(asset("app-images/{$product->image->branding }" )); ?>" alt="<?php echo e($product->title); ?> Branding" />
 			</div>
 		</div>
 	</div>
