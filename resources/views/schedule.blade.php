@@ -24,7 +24,7 @@
 				</div>
 			</div>
 			<br>
-			<div class="alert  print-error-msgSC" style="display:none;  color: #73b09c;">
+			<div class="alert  print-error-msgSC" style="display:none;  color: red;">
 				<ul ></ul>
 			</div>
 		</div>
@@ -58,7 +58,7 @@
 			<h1>Schedule a Call</h1>
 			<span class="firstUnderline">ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ</span>
 			<span class="secondUnderline">ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ</span>            
-			<div class="alert  print-error-msgCA" style="display:none;  color: #73b09c;">
+			<div class="alert  print-error-msgCA" style="display:none;  color: red;">
 				<ul ></ul>
 			</div>
 		</div>
@@ -97,7 +97,7 @@
 					if($.isEmptyObject(data.error)){
 						swal(
 							'Good job!',
-							'You clicked the button!',
+							'Your Message Sent',
 							'success'
 							)
 						$(".print-error-msgSC").css('display','none');
@@ -122,7 +122,7 @@
 					if($.isEmptyObject(data.error)){
 						swal(
 							'Good job!',
-							'You clicked the button!',
+							'Your Message Sent',
 							'success'
 							)
 						$(".print-error-msgCA").css('display','none');

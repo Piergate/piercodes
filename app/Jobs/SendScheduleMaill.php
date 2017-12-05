@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Jobs;
+use Mail;
 use App\Mail\Schedule;
 use Illuminate\Bus\Queueable;
 use Illuminate\Queue\SerializesModels;
@@ -11,7 +12,7 @@ use Illuminate\Foundation\Bus\Dispatchable;
 class SendScheduleMaill implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
-
+    protected $content;
     /**
      * Create a new job instance.
      *
@@ -29,7 +30,7 @@ class SendScheduleMaill implements ShouldQueue
      */
     public function handle()
     {
-        $send = new Schedule($content);
-        Mail::to(env('MAIL_FROM_ADDRESS'))->send($send);
+        $send = new Schedule($this->content);
+        Mail::to('info@piercodes.com')->send($send);
     }
 }

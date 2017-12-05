@@ -13,7 +13,7 @@ use Illuminate\Foundation\Bus\Dispatchable;
 class SendCallMaill implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
-
+    protected $content;
     /**
      * Create a new job instance.
      *
@@ -31,8 +31,8 @@ class SendCallMaill implements ShouldQueue
      */
     public function handle()
     {
-        $send = new Call($content);
-        Mail::to(env('MAIL_FROM_ADDRESS'))->send($send);
+        $send = new Call($this->content);
+        Mail::to('info@piercodes.com')->send($send);
 
     }
 }

@@ -25,11 +25,11 @@ class ScheduleController extends Controller
     public function send_me_schedule(Request $request)
     {
         $validate = Validator::make($request->all(), [
-            'fullname'           => 'required|min:10|max:30',
+            'fullname'           => 'required|min:5|max:30',
             'email'              => 'required|email',
-            'companyname'        => 'required|min:10',
-            'phonenumber'        => 'required|min:11|numeric',
-            'projectdetalis'     => 'required|min:20', 
+            'companyname'        => 'required|min:5',
+            'phonenumber'        => 'required|min:7|numeric',
+            'projectdetalis'     => 'required|min:5', 
         ]);
         if ($validate->passes()) {
             $schedules = Schedule::create([
@@ -46,7 +46,7 @@ class ScheduleController extends Controller
                 'phonenumber'    => Input::get('phonenumber'),
                 'projectdetalis' => Input::get('projectdetalis')
             ];
-            dispatch(new SendScheduleMaill($content));
+            SendScheduleMaill::dispatch($content);
             // $receiverAddress = 'info@piercodes.com';
             // $send =  Mail::to($receiverAddress)->send(new Schedule($content));
         }
@@ -56,10 +56,9 @@ class ScheduleController extends Controller
     }
     public function send_me_call(Request $request)
     {
-        // return $request->all();
         $validate = Validator::make($request->all(), [
-            'fullname'      => 'required|min:10|max:30',
-            'phonenumber'   => 'required|min:11|numeric',
+            'fullname'      => 'required|min:5|max:30',
+            'phonenumber'   => 'required|min:7|numeric',
             'day'           => 'required',
             'time'          => 'required'
         ]);
@@ -77,12 +76,11 @@ class ScheduleController extends Controller
                 'day'           => Input::get('day'),
                 'time'          => Input::get('time')
             ];
-            dispatch(new SendCallMaill($content));
-            dispatch(new SendCallMaill($content));
+            SendCallMaill::dispatch($content);
             // $receiverAddress = 'info@piercodes.com';
             // Mail::to($receiverAddress)->send(new Call($content));
+        return back();
         }
-            return back();
         return response()->json(['error'=>$validate->errors()->all()]);
 
     }
