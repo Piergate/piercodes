@@ -1,11 +1,10 @@
-@extends('layouts.index')
-@section('title', 'Schedule a Call')
+<?php $__env->startSection('title', 'Schedule a Call'); ?>
 
-@section('content')
+<?php $__env->startSection('content'); ?>
 
 <div class="headerContentSchedule container">
 	<!-- Logo and Navigation Menu Top Panel -->
-	@include('navbar')
+	<?php echo $__env->make('navbar', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 </div>
 <div class="scheduleACall container">
 	<!-- Contact and Schedule a Call Structure -->
@@ -36,7 +35,8 @@
 				<span class="firstUnderline">ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ</span>
 				<span class="secondUnderline">ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ</span>    
 				<form data-aos="fade-right" data-aos-duration="2000" name="schedule">
-					{{csrf_field() }}
+					<?php echo e(csrf_field()); ?>
+
 					<input type="text" name="scfullname" placeholder="NAME *"   required="required" />
 					<input type="text" name="sccompanyname" placeholder="COMPANY *"   required="required" />
 					<input type="email" name="scemail" placeholder="EMAIL *"   required="required" />
@@ -67,7 +67,8 @@
 		<div class="reservationForm col-md-8 col-md-offset-2">
 
 			<form data-aos="fade-right" data-aos-duration="2000">
-				{{csrf_field() }}
+				<?php echo e(csrf_field()); ?>
+
 				<input type="text" name="cafullname" placeholder="NAME *" required="required" />
 				<input type="text" name="caphonenumber" placeholder="PHONE *" required="required" />
 				<input type="text" name="caday" class="datepicker" placeholder="MEETING DAY *" required="required" />
@@ -78,7 +79,7 @@
 	</div>
 </section>
 
-@push('scripts')
+<?php $__env->startPush('scripts'); ?>
 <script type="text/javascript">
 	$(document).ready(function() {
 		$(".btn-schedule").click(function(e){
@@ -148,5 +149,6 @@
 		}
 	});
 </script>
-@endpush
-@endsection
+<?php $__env->stopPush(); ?>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.index', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

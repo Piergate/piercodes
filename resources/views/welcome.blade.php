@@ -166,7 +166,7 @@
     </div>
 </section>
 <!-- Projects Section Structure -->
-@if(isset($products))
+@if($products->count() > 0)
 <section class="projectsSection" id="portfolio">
     <div class="container-fluid">
         <!-- Projects Title -->
@@ -183,7 +183,7 @@
         <div class="row">
             <div class="projectTemplate">
                 <div class="souqWebProjectPic col-md-5" data-aos="flip-left" data-aos-duration="1500" style="background-image: linear-gradient(to right, rgba(125, 87, 99, 0.7), rgba(115, 176, 156, 0.8)), url({{ asset('app-images/'.$product->image->avater)}});">
-                    
+
                     <a href="{{url('/product_details'.'/'.$product->slug) }}" target="_blank">Project Details</a>
                 </div>
                 <div class="rightProjectInfo col-md-7">
@@ -252,6 +252,7 @@
 
     </div>
 </section>
+@else
 @endif
 <section class="projectsBrandingSection">
     <div class="container-fluid">

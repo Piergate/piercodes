@@ -1,17 +1,14 @@
 @component('mail::message')
 <h3 >
-	You must make an appointment with
+	You Must Make An Calls To
 </h3>
 Mr/Ms: &nbsp; &nbsp; &nbsp; &nbsp;{{ $content['fullname'] }}
 <br>
-Company :  {{ $content['companyname'] }} 
-<br>
 Content:&nbsp; &nbsp; 
 {{ $content['phonenumber'] }}
- & 
-{{ $content['email'] }}
 <br>
-About : &nbsp; &nbsp; &nbsp; &nbsp; {{ $content['projectdetalis'] }}
+Make Call :  {{ $content['day'] }} &nbsp; at &nbsp; {{ $content['time'] }} 
+
 
 @slot('footer')
 

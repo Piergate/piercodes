@@ -17,7 +17,7 @@
 				<div class="col-md-2">
 					<div data-aos="fade-right" data-aos-duration="900" class="projectLogo">
 
-						<img src="{{ url("app-images/{$product->image->logo} ") }}" alt="Souq Naql Logo" />
+						<img src="{{ asset("app-images/{$product->image->logo}" ) }}" alt="Souq Naql Logo" />
 					</div>
 				</div>
 				<div class="col-md-6">

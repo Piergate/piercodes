@@ -75,8 +75,14 @@
                         <a id="edit_project" ><i class="fa fa-pencil-square-o fa-2x"> Edit Project</i></a>
                         
                     </div>
-                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xs-push-4">
-                        delete
+                    
+                    <h3>EMAIL</h3>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <a href="{{ url('/adminpanel/schedules') }}"><i class="fa fa-pencil-square-o fa-2x"> Schedule Mail</i></a>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <a href="{{ url('/adminpanel/calls') }}" ><i class="fa fa-pencil-square-o fa-2x"> Call Mail</i></a>
+                        
                     </div>
                 </div>
                 <!-- Edit Popup Begins -->

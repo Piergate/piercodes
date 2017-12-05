@@ -7,7 +7,7 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class Schedule extends Mailable
+class Call extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -29,7 +29,7 @@ class Schedule extends Mailable
      */
     public function build()
     {
-        return $this->markdown('email.schedule')
+        return $this->markdown('email.call')
                         ->with('content',$this->content);
     }
 }

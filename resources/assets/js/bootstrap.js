@@ -16,6 +16,8 @@ try {
 
 require('jquery-ui');
 require('jquery-datepicker');
+window.swal = require('sweetalert2');
+
 
 require('timepicker');
 window.AOS = require('AOS');

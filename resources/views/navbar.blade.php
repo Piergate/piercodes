@@ -2,7 +2,7 @@
 	<!-- Logo Block -->
 	<div class="logoBlock col-md-4 pull-left">
 		<a href="{{ url('/') }}" title=" {{config('app.name', 'PierCodes') }}">
-		<img class="img-responsive" src="{{ asset('images/piercodes_logo.png') }}" alt="Piercodes Logo" />
+		<img class="img-responsive" src="{{ asset('images/piercodes_logo.png') }}" alt="Piercodes" />
 		</a>
 	</div>
 	<!-- Navigation Menu -->
