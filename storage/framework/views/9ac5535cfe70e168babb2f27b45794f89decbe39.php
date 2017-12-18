@@ -10,6 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="shortcut icon" href="<?php echo e(asset('images/favicon.ico')); ?>" type="image/x-icon">
     <link rel="icon" href="<?php echo e(asset('images/favicon.ico')); ?>" type="image/x-icon">       
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="<?php echo e(asset('css/app.css')); ?>" />
     <link rel="stylesheet" href="<?php echo e(asset('css/jquery.lighter.css')); ?>" />
     <link rel="stylesheet" href="<?php echo e(asset('css/style.css')); ?>" />
@@ -17,10 +19,18 @@
     <script src="<?php echo e(asset('js/app.js')); ?>"></script>
     <script src="<?php echo e(asset('js/jquery.lighter.js')); ?>"></script>
     <script src="<?php echo e(asset('js/main.js')); ?>"></script>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-2062767857509083",
+            enable_page_level_ads: true
+        });
+    </script>
 </head>
 <body>
     <div id="app">
         <?php echo $__env->yieldContent('content'); ?>                
+    
     </div>
     <?php echo $__env->yieldPushContent('scripts'); ?>
 </body>

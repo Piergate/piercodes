@@ -35,7 +35,7 @@
 				<h3 data-aos="fade-right" data-aos-duration="900">Fill out the form below or <button class="scheduleLink">schedule a call.</button></h3>
 				<span class="firstUnderline">ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ</span>
 				<span class="secondUnderline">ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ</span>    
-				<form data-aos="fade-right" data-aos-duration="2000" name="schedule">
+				<form data-aos="fade-right" data-aos-duration="2000" name="schedule" id="schedule">
 					{{csrf_field() }}
 					<input type="text" name="scfullname" placeholder="NAME *"   required="required" />
 					<input type="text" name="sccompanyname" placeholder="COMPANY *"   required="required" />
@@ -66,7 +66,7 @@
 	<div class="row">
 		<div class="reservationForm col-md-8 col-md-offset-2">
 
-			<form data-aos="fade-right" data-aos-duration="2000">
+			<form data-aos="fade-right" data-aos-duration="2000" id="call">
 				{{csrf_field() }}
 				<input type="text" name="cafullname" placeholder="NAME *" required="required" />
 				<input type="text" name="caphonenumber" placeholder="PHONE *" required="required" />
@@ -95,12 +95,16 @@
 				data: {_token:_token,fullname:scfullname,companyname:sccompanyname,email:scemail,phonenumber:scphonenumber,projectdetalis:scprojectdetalis},
 				success: function(data) {
 					if($.isEmptyObject(data.error)){
-						swal(
-							'Good job!',
-							'Your Message Sent',
-							'success'
-							)
+						swal({
+							title:'Thank You '+scfullname+'!',
+							text: 'Your message has been successfully sent. We will contact you very soon!',
+							type: 'success',
+							showConfirmButton: false,
+							allowOutsideClick: false,
+							timer: 1500
+						});
 						$(".print-error-msgSC").css('display','none');
+						document.getElementById("schedule").reset();
 					}else{
 						printErrorMsgSC(data.error);
 					}
@@ -120,12 +124,16 @@
 				data: {_token:_token,fullname:cafullname,day:caday,phonenumber:caphonenumber,time:catime},
 				success: function(data) {
 					if($.isEmptyObject(data.error)){
-						swal(
-							'Good job!',
-							'Your Message Sent',
-							'success'
-							)
+						swal({
+							title:'Thank You '+cafullname+'!',
+							text: 'Your message has been successfully sent. We will contact you very soon!',
+							type: 'success',
+							showConfirmButton: false,
+							allowOutsideClick: false,
+							timer: 1500
+						});
 						$(".print-error-msgCA").css('display','none');
+						document.getElementById("call").reset();
 					}else{
 						printErrorMsgCA(data.error);
 					}

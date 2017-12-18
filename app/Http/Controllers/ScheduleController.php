@@ -11,9 +11,6 @@ use App\Jobs\SendCallMaill;
 use Illuminate\Http\Request;
 use App\Jobs\SendScheduleMaill;
 use Illuminate\Support\Facades\Input;
-// use App\Mail\SendMessage;
-// use App\Mail\Schedule;
-// use App\Mail\Call;
 
 class ScheduleController extends Controller
 {
@@ -47,8 +44,6 @@ class ScheduleController extends Controller
                 'projectdetalis' => Input::get('projectdetalis')
             ];
             SendScheduleMaill::dispatch($content);
-            // $receiverAddress = 'info@piercodes.com';
-            // $send =  Mail::to($receiverAddress)->send(new Schedule($content));
         }
         return response()->json(['error'=>$validate->errors()->all()]);
 
@@ -77,9 +72,7 @@ class ScheduleController extends Controller
                 'time'          => Input::get('time')
             ];
             SendCallMaill::dispatch($content);
-            // $receiverAddress = 'info@piercodes.com';
-            // Mail::to($receiverAddress)->send(new Call($content));
-        return back();
+            return back();
         }
         return response()->json(['error'=>$validate->errors()->all()]);
 

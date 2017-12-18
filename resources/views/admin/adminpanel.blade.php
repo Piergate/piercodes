@@ -15,7 +15,7 @@
 
             <!-- Branding Image -->
             <a class="navbar-brand" href="{{ url('/') }}" style="padding: 0;">
-                <img class="img-responsive" src="{{asset('images/piercodes_logo.gif') }} " alt="Piercodes Logo" style="height: 40px;" />
+                <img class="img-responsive" src="{{asset('images/piercodes_logo.png') }} " alt="Piercodes Logo" style="height: 40px;" />
             </a>
         </div>
 
@@ -72,16 +72,16 @@
                         <a href="{{ url('/add') }}"><i class="fa fa-pencil-square-o fa-2x"> Add New Project</i></a>
                     </div>
                     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                        <a id="edit_project" ><i class="fa fa-pencil-square-o fa-2x"> Edit Project</i></a>
+                        <a id="edit_project" ><i class="fa fa-pencil-square fa-2x">Edit Project</i></a>
                         
                     </div>
                     
                     <h3>EMAIL</h3>
                     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                        <a href="{{ url('/adminpanel/schedules') }}"><i class="fa fa-pencil-square-o fa-2x"> Schedule Mail</i></a>
+                        <a href="{{ url('/adminpanel/schedules') }}"><i class="fa fa-envelope fa-2x"> Schedule Mail</i></a>
                     </div>
                     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                        <a href="{{ url('/adminpanel/calls') }}" ><i class="fa fa-pencil-square-o fa-2x"> Call Mail</i></a>
+                        <a href="{{ url('/adminpanel/calls') }}" ><i class="fa fa-phone-square fa-2x"> Call Mail</i></a>
                         
                     </div>
                 </div>
@@ -91,13 +91,19 @@
                     <h1>Projects List</h1>
                     <span>ـــــــــــــــــــــــــــــــــــــــ</span>
                     <!-- Edit Title Ends -->
-
+                    <br>
                     <!-- Edit Projects List Begins -->
-                    <p>Projects List Goes Here</p>
+                    @foreach($products as $product)
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <a href="{{url('/adminpanel/edit_project/'.$product->slug) }}">
+                            <img src="{{ asset('app-images/'.$product->image->logo)}}" width="50px" height="50px">
+                            <br>
+                            {{ $product->title }}
+                        </a>
+                    </div>
+                    @endforeach
                     <!-- Edit Projects List Ends -->
 
-                    <!-- Edit Controllers Begin -->
-                    {{-- <button id="nextEdit">Next</button> --}}
                     <button id="cancelEdit">Cancel</button>
                     <!-- Edit Controllers End -->
                 </div>

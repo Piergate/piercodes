@@ -5,9 +5,11 @@ Route::get('/schedule', 'ScheduleController@index');
 Route::get('/product_details/{product}', 'ProductsController@index');
 
 Route::group(['middleware' => ['auth']], function () {
-	Route::view('/adminpanel', 'admin.adminpanel');
 	Route::get('/add', 'ProductsController@create');
+	Route::get('/adminpanel', 'AdminController@index');
 	Route::post('/addproject', 'ProductsController@store');
+	Route::get('/adminpanel/edit_project/{product}', 'AdminController@edit');
+	Route::post('/adminpanel/save/{product}','AdminController@update');
 
 	Route::get('/adminpanel/schedules', 'ScheduleController@schedule');
 	Route::get('/adminpanel/calls', 'ScheduleController@call');
