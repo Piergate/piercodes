@@ -500,7 +500,6 @@ a:focus {
   color: #FFFFFF;
 }
 .projectsSection .projectTemplate .souqProjectPic {
-  /*background-image: linear-gradient(to right, rgba(125, 87, 99, 0.7), rgba(115, 176, 156, 0.8)), url("../images/souq_naql.gif");*/
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -522,7 +521,7 @@ a:focus {
   color: #FFFFFF;
 }
 .projectsSection .projectTemplate .souqWebProjectPic {
-  background-image: linear-gradient(to right, rgba(125, 87, 99, 0.7), rgba(115, 176, 156, 0.8)), url("..//*images*//souq_naql_web.png");
+  background-image: linear-gradient(to right, rgba(125, 87, 99, 0.7), rgba(115, 176, 156, 0.8));
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
