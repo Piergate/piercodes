@@ -412,7 +412,6 @@ a:focus {
   clear: right;
 }
 .projectsSection .projectTemplate .maysaraProjectPic {
-  /*background-image: linear-gradient(to right, rgba(125, 87, 99, 0.7), rgba(115, 176, 156, 0.8)), url("../images/maysara.gif");*/
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -521,7 +520,6 @@ a:focus {
   color: #FFFFFF;
 }
 .projectsSection .projectTemplate .souqWebProjectPic {
-  background-image: linear-gradient(to right, rgba(125, 87, 99, 0.7), rgba(115, 176, 156, 0.8));
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1413,7 +1411,7 @@ a:focus {
 .projectHeaderSection {
   overflow: hidden;
   /*height: 100vh;*/
-  background: linear-gradient(to right, rgba(125, 87, 99, 0.7), rgba(115, 176, 156, 0.8)), url("../images/souq_naql_bg.png");
+  background: linear-gradient(to right, rgba(125, 87, 99, 0.7), rgba(115, 176, 156, 0.8));
   background-size: cover;
   padding-bottom: 5rem;
 }
