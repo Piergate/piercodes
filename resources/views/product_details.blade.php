@@ -3,7 +3,7 @@
 
 @section('content')
 <header class="projectHeaderSection" style="  background: linear-gradient(to right, rgba(125, 87, 99, 0.7), rgba(115, 176, 156, 0.8)),
- url(" {{ asset('app-images/'.$product->image->background)}} ");">
+ url('../app-images/{{ $product->image->background }} ')  !important; ">
 	<!-- Main Project Header Content Generic Div -->
 	<div class="headerContent container">
 		<!-- Logo and Navigation Menu Top Panel -->

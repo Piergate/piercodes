@@ -182,7 +182,7 @@
         @if( $loop->iteration %2 !== 0)
         <div class="row">
             <div class="projectTemplate">
-                <div class="souqWebProjectPic col-md-5" data-aos="flip-left" data-aos-duration="1500" style= "background-image: linear-gradient(to right, rgba(125, 87, 99, 0.7), rgba(115, 176, 156, 0.8)), url('../app-images/{{ $product->image->avater }} ')  !important;>
+                <div class="souqWebProjectPic col-md-5" data-aos="flip-left" data-aos-duration="1500" style= "background-image: linear-gradient(to right, rgba(125, 87, 99, 0.7), rgba(115, 176, 156, 0.8)), url('../app-images/{{ $product->image->avater }} ')  !important; ">
 
                     <a href="{{url('/product_details'.'/'.$product->slug) }}" target="_blank">Project Details</a>
                 </div>
