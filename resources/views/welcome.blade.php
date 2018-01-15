@@ -389,13 +389,13 @@
             <div class="googleMap col-md-6"  data-aos="fade-right" data-aos-duration="3000">
                 <h2><span>Egypt</span> Location</h2>
                 <span class="secondUnderline">ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ</span>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.695109589587!2d31.308995485280946!3d30.07427278187149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fb51ca4199b%3A0x8f8efffde70916cc!2z2KjYp9mG2YjYsdin2YXYpyDYrdix2Kgg2KPZg9iq2YjYqNix!5e0!3m2!1sar!2seg!4v1510579224626" width="800" height="600" style="border:0;" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3452.626688229222!2d31.308535156869503!3d30.076233452900556!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6a04d14249b28dba!2sPiergate+Co!5e0!3m2!1sen!2seg!4v1516008745446" width="800" height="600" style="border:0;" allowfullscreen></iframe>
             </div>
             <!-- Google Map USA -->
             <div class="googleMap col-md-6"  data-aos="fade-left" data-aos-duration="3000">
                 <h2><span>USA</span> Location</h2>
                 <span class="secondUnderline">ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ</span>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3516.8640906509136!2d-82.3533991146684!3d28.18104848259813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2b0d298933709%3A0x4f9fd6d6557c34a3!2zMTYzOSBGZW5uc2J1cnkgQ3QsIFdlc2xleSBDaGFwZWwsIEZMIDMzNTQ02Iwg2KfZhNmI2YTYp9mK2KfYqiDYp9mE2YXYqtit2K_YqQ!5e0!3m2!1sar!2seg!4v1511259669076" width="600" height="450" style="border:0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.532794847593!2d-82.37356221482916!3d28.221503982581822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2b088cd77d1d3%3A0xe3f49e1dcc822bce!2zNDQ1MCBQZXQgTG4gIzEwNSwgTHV0eiwgRkwgMzM1NTnYjCDYp9mE2YjZhNin2YrYp9iqINin2YTZhdiq2K3Yr9ip!5e0!3m2!1sar!2seg!4v1516012886916" width="600" height="450" style="border:0" allowfullscreen></iframe>
             </div>
 
         </div>

@@ -22,11 +22,12 @@ class ScheduleController extends Controller
     public function send_me_schedule(Request $request)
     {
         $validate = Validator::make($request->all(), [
-            'fullname'           => 'required|min:5|max:30',
-            'email'              => 'required|email',
-            'companyname'        => 'required|min:5',
-            'phonenumber'        => 'required|min:7|numeric',
-            'projectdetalis'     => 'required|min:5', 
+            'fullname'              => 'required|min:5|max:30',
+            'email'                 => 'required|email',
+            'companyname'           => 'required|min:5',
+            'phonenumber'           => 'required|min:7|numeric',
+            'projectdetalis'        => 'required|min:5',
+            'g-recaptcha-response'  => 'required|recaptcha'
         ]);
         if ($validate->passes()) {
             $schedules = Schedule::create([
@@ -52,10 +53,11 @@ class ScheduleController extends Controller
     public function send_me_call(Request $request)
     {
         $validate = Validator::make($request->all(), [
-            'fullname'      => 'required|min:5|max:30',
-            'phonenumber'   => 'required|min:7|numeric',
-            'day'           => 'required',
-            'time'          => 'required'
+            'fullname'              => 'required|min:5|max:30',
+            'phonenumber'           => 'required|min:7|numeric',
+            'day'                   => 'required',
+            'time'                  => 'required',
+            'g-recaptcha-response'  => 'required|recaptcha'
         ]);
         if ($validate->passes()) {
             $calls = Call::create([

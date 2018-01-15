@@ -14,7 +14,7 @@
 		<div class="col-md-4">
 			<div class="tapShoulderParagraph">
 				<h1 data-aos="fade-right" data-aos-duration="500">Tap our Shoulder.</h1>
-				<span data-aos="fade-right" data-aos-duration="900"><i class="fa fa-phone"></i>01024098886 - 02-261936922</span>
+				<span data-aos="fade-right" data-aos-duration="900"><i class="fa fa-phone"></i>01115831874 - 02-261936922</span>
 				<span data-aos="fade-right" data-aos-duration="900"><i class="fa fa-envelope"></i>info@piercodes.com</span>
 				<div data-aos="fade-right" data-aos-duration="1300" class="socialIcons">
 					<a href="#"><i class="fa fa-facebook"></i></a>
@@ -42,10 +42,11 @@
 					<input type="email" name="scemail" placeholder="EMAIL *"   required="required" />
 					<input type="text" name="scphonenumber" placeholder="PHONE *"   required="required" />
 					<textarea name="scprojectdetalis" placeholder="PROJECT DETAILS *" required="required"  ></textarea>
+					{{-- <div class="g-recaptcha" data-sitekey="{{env('RE_CAP_SITE')}}"></div> --}}
+					
 					<button type="submit"  class="btn-schedule pull-right">SUBMIT</button>
 				</form>
 			</div>
-
 		</div>
 	</div>
 </div>
@@ -72,12 +73,12 @@
 				<input type="text" name="caphonenumber" placeholder="PHONE *" required="required" />
 				<input type="text" name="caday" class="datepicker" placeholder="MEETING DAY *" required="required" />
 				<input type="text" name="catime" id="timepicker1" placeholder="MEETING HOUR *" required="required" />
+				{{-- <div class="g-recaptcha" data-sitekey="{{env('RE_CAP_SITE')}}"></div> --}}
 				<button class="btn-calls" type="submit">SEND REQUREST</button>
 			</form>
 		</div>
 	</div>
 </section>
-
 @push('scripts')
 <script type="text/javascript">
 	$(document).ready(function() {

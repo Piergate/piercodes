@@ -20,6 +20,7 @@
     <script src="<?php echo e(asset('js/jquery.lighter.js')); ?>"></script>
     <script src="<?php echo e(asset('js/main.js')); ?>"></script>
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({
             google_ad_client: "ca-pub-2062767857509083",
