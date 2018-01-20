@@ -3,25 +3,25 @@
 namespace App\Jobs;
 
 use Mail;
-use App\Mail\Schedule;
 use Illuminate\Bus\Queueable;
+use App\Mail\SellerPierEmails;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 
-class SendScheduleMaill implements ShouldQueue
+class SendSellerPierMaill implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
-    protected $content;
+protected $list;
     /**
      * Create a new job instance.
      *
      * @return void
      */
-    public function __construct($content)
+    public function __construct($list)
     {
-        $this->content = $content;
+        $this->list = $list;
     }
 
     /**
@@ -31,7 +31,7 @@ class SendScheduleMaill implements ShouldQueue
      */
     public function handle()
     {
-        $send = new Schedule($this->content);
-        Mail::to('info@piercodes.com')->send($send);
+        $send = new SellerPierEmails($this->list);
+        Mail::to($this->list)->send($send);
     }
 }

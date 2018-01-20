@@ -7,7 +7,7 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class Call extends Mailable implements ShouldQueue
+class SellerPierEmails extends Mailable implements ShouldQueue
 {
     use Queueable, SerializesModels;
 
@@ -16,10 +16,9 @@ class Call extends Mailable implements ShouldQueue
      *
      * @return void
      */
-    public function __construct($content)
+    public function __construct($list)
     {
-        //
-        $this->content = $content;
+        $this->list = $list;
     }
 
     /**
@@ -29,7 +28,8 @@ class Call extends Mailable implements ShouldQueue
      */
     public function build()
     {
-        return $this->markdown('email.call')
-                        ->with('content',$this->content);
+        // $this->list
+            return $this->from('support@Sellerpier.com')
+            ->markdown('email.Sellerpier');
     }
 }

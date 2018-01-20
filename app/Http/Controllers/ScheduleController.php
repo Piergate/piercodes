@@ -27,7 +27,7 @@ class ScheduleController extends Controller
             'companyname'           => 'required|min:5',
             'phonenumber'           => 'required|min:7|numeric',
             'projectdetalis'        => 'required|min:5',
-            'g-recaptcha-response'  => 'required|recaptcha'
+            // 'g-recaptcha-response'  => 'required|recaptcha'
         ]);
         if ($validate->passes()) {
             $schedules = Schedule::create([
@@ -57,7 +57,7 @@ class ScheduleController extends Controller
             'phonenumber'           => 'required|min:7|numeric',
             'day'                   => 'required',
             'time'                  => 'required',
-            'g-recaptcha-response'  => 'required|recaptcha'
+            // 'g-recaptcha-response'  => 'required|recaptcha'
         ]);
         if ($validate->passes()) {
             $calls = Call::create([

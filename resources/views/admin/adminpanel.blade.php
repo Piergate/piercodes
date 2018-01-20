@@ -68,6 +68,8 @@
                         {{ session('status') }}
                     </div>
                     @endif
+                    <h3 style="margin-top: 0px;">Project</h3>
+
                     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                         <a href="{{ url('/add') }}"><i class="fa fa-pencil-square-o fa-2x"> Add New Project</i></a>
                     </div>
@@ -84,6 +86,11 @@
                         <a href="{{ url('/adminpanel/calls') }}" ><i class="fa fa-phone-square fa-2x"> Call Mail</i></a>
                         
                     </div>
+                    <h3>SellerPier</h3>
+                    <div class="">
+                        <a href="{{ url('/sellerpier_email') }}"><i class="fa fa-envelope fa-2x"> Send Email</i></a>
+                    </div>
+
                 </div>
                 <!-- Edit Popup Begins -->
                 <div class="edit-template">

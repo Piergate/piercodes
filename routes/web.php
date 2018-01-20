@@ -13,6 +13,11 @@ Route::group(['middleware' => ['auth']], function () {
 
 	Route::get('/adminpanel/schedules', 'ScheduleController@schedule');
 	Route::get('/adminpanel/calls', 'ScheduleController@call');
+
+	// To Send Email For SellerPier
+	Route::get('/sellerpier_email', 'SellerPierEmailsController@index');
+	Route::post('/show_email','SellerPierEmailsController@store');
+
 });
 
 Route::get('send_test_email', 'HomeController@send_test_email');
