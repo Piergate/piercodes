@@ -10,7 +10,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 class Schedule extends Mailable implements ShouldQueue
 {
     use Queueable, SerializesModels;
-
+    protected $content;
     /**
      * Create a new message instance.
      *
