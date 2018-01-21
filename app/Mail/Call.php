@@ -10,7 +10,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 class Call extends Mailable implements ShouldQueue
 {
     use Queueable, SerializesModels;
-
+    protected $content;
     /**
      * Create a new message instance.
      *
