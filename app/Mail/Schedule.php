@@ -29,6 +29,7 @@ class Schedule extends Mailable implements ShouldQueue
      */
     public function build()
     {
-        return $this->markdown('email.schedule');
+        return $this->markdown('email.schedule')
+                        ->with('content',$this->content);
     }
 }
