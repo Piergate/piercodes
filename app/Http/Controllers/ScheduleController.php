@@ -29,13 +29,13 @@ class ScheduleController extends Controller
             'projectdetalis'        => 'required|min:5'
         ]);
         if ($validate->passes()) {
-            $schedules = Schedule::create([
-                'fullname'       => Input::get('fullname'),
-                'email'          => Input::get('email'),
-                'companyname'    => Input::get('companyname'),
-                'phonenumber'    => Input::get('phonenumber'),
-                'projectdetalis' => Input::get('projectdetalis')
-            ]);
+            // $schedules = Schedule::create([
+            //     'fullname'       => Input::get('fullname'),
+            //     'email'          => Input::get('email'),
+            //     'companyname'    => Input::get('companyname'),
+            //     'phonenumber'    => Input::get('phonenumber'),
+            //     'projectdetalis' => Input::get('projectdetalis')
+            // ]);
             $content = [
                 'fullname'       => Input::get('fullname'),
                 'email'          => Input::get('email'),
