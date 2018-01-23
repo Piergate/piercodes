@@ -34,6 +34,9 @@ protected $headers;
     public function handle()
     {
         $send = new SellerPierEmails($this->list, $this->headers);
+        $headers = $send->getHeaders();
+        $headers->addTextHeader($this->headers);
         Mail::to($this->list)->send($send);
+
     }
 }

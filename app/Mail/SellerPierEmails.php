@@ -32,8 +32,6 @@ class SellerPierEmails extends Mailable implements ShouldQueue
     {
         // $this->list
             return $this->from('support@sellerpier.com')
-            ->getHeaders()
-            ->addTextHeader($this->headers)
             ->markdown('email.Sellerpier');
     }
 }
