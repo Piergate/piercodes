@@ -11,16 +11,14 @@ class SellerPierEmails extends Mailable implements ShouldQueue
 {
     use Queueable, SerializesModels;
     protected $list;
-    protected $headers;
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($list, $headers)
+    public function __construct($list)
     {
         $this->list = $list;
-        $this->headers = $headers;
     }
 
     /**

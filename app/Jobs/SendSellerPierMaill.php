@@ -13,17 +13,15 @@ use Illuminate\Foundation\Bus\Dispatchable;
 class SendSellerPierMaill implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
-protected $list;
-protected $headers;
+    protected $list;
     /**
      * Create a new job instance.
      *
      * @return void
      */
-    public function __construct($list, $headers)
+    public function __construct($list)
     {
         $this->list = $list;
-        $this->headers = $headers;
     }
 
     /**
@@ -33,10 +31,14 @@ protected $headers;
      */
     public function handle()
     {
-        $send = new SellerPierEmails($this->list, $this->headers);
-        $headers = $send->getHeaders();
-        $headers->addTextHeader($this->headers);
-        Mail::to($this->list)->send($send);
+        $send = new SellerPierEmails($this->list);
+        Mail::to($this->list)->send($send)
+        ->withSwiftMessage(function ($message) {
+            $message->getHeaders()
+            ->addTextHeader('MIME-Version', '1.0')
+            ->addTextHeader('Content-type', 'text/html')
+            ->addTextHeader('charset', 'iso-8859-1');
+        });
 
     }
 }
