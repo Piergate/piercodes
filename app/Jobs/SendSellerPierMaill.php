@@ -14,14 +14,16 @@ class SendSellerPierMaill implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 protected $list;
+protected $headers;
     /**
      * Create a new job instance.
      *
      * @return void
      */
-    public function __construct($list)
+    public function __construct($list, $headers)
     {
         $this->list = $list;
+        $this->headers = $headers;
     }
 
     /**
@@ -31,7 +33,7 @@ protected $list;
      */
     public function handle()
     {
-        $send = new SellerPierEmails($this->list);
+        $send = new SellerPierEmails($this->list, $this->headers);
         Mail::to($this->list)->send($send);
     }
 }

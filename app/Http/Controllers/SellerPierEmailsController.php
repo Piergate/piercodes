@@ -36,15 +36,18 @@ class SellerPierEmailsController extends Controller
      */
     public function store(Request $request)
     {
-       $emails = explode(PHP_EOL, $request->emailAddress);
+     $emails = explode(PHP_EOL, $request->emailAddress);
        // $list =  array();
-       foreach ($emails as $key => $email) {
+     foreach ($emails as $key => $email) {
         if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
             $mailAdded =  SellerPierEmails::firstOrCreate([
-               'email' => $email
-           ]);
+             'email' => $email
+         ]);
             $list = $mailAdded->email;
-            SendSellerPierMaill::dispatch($list);
+            $headers[] = 'MIME-Version: 1.0';
+            $headers[] = 'Content-type: text/html; charset=iso-8859-1';
+
+            SendSellerPierMaill::dispatch($list, $headers);
         }
     }
     // return $list;
