@@ -32,13 +32,7 @@ class SendSellerPierMaill implements ShouldQueue
     public function handle()
     {
         $send = new SellerPierEmails($this->list);
-        Mail::to($this->list)->send($send)
-        ->withSwiftMessage(function ($message) {
-            $message->getHeaders()
-            ->addTextHeader('MIME-Version', '1.0')
-            ->addTextHeader('Content-type', 'text/html')
-            ->addTextHeader('charset', 'iso-8859-1');
-        });
+        Mail::to($this->list)->send($send);
 
     }
 }

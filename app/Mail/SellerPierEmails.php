@@ -29,7 +29,14 @@ class SellerPierEmails extends Mailable implements ShouldQueue
     public function build()
     {
         // $this->list
-            return $this->from('support@sellerpier.com')
+        return $this->withSwiftMessage(function ($message) {
+            $message->getHeaders()
+            ->addTextHeader('MIME-Version', '1.0');
+            // ->addTextHeader('Content-type', 'text/html')
+            // ->setContentType('text/html')
+            // ->addTextHeader('charset', 'iso-8859-1');
+        })
+            ->from('support@sellerpier.com')
             ->markdown('email.Sellerpier');
     }
 }
