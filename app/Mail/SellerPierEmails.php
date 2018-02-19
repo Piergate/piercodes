@@ -36,7 +36,7 @@ class SellerPierEmails extends Mailable implements ShouldQueue
             // ->setContentType('text/html')
             // ->addTextHeader('charset', 'iso-8859-1');
         })
-            ->from('support@sellerpier.com')
+            ->from('sellerpier@piercodes.com')
             ->markdown('email.Sellerpier');
     }
 }

@@ -12,7 +12,7 @@
     <!--[if !mso]><!-- -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
     <!--<![endif]-->
-    
+
     <style type="text/css" id="media-query">
       body {
   margin: 0;
@@ -304,9 +304,9 @@ a[x-apple-data-detectors=true] {
                   <div style="background-color: transparent; width: 100% !important;">
                   <!--[if (!mso)&(!IE)]><!--><div style="border-top: 0px solid transparent; border-left: 0px solid transparent; border-bottom: 0px solid transparent; border-right: 0px solid transparent; padding-top:0px; padding-bottom:0px; padding-right: 0px; padding-left: 0px;"><!--<![endif]-->
                   <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 30px; padding-left: 40px; padding-top: 40px; padding-bottom: 40px;"><![endif]-->
-                    <div style="font-family:'Roboto', Tahoma, Verdana, Segoe, sans-serif;line-height:150%;color:#555555; padding-right: 30px; padding-left: 40px; padding-top: 40px; padding-bottom: 40px;">    
-                        <div style="font-size:12px;line-height:18px;color:#555555;font-family:'Roboto', Tahoma, Verdana, Segoe, sans-serif;text-align:left;"><p style="margin: 0;font-size: 12px;line-height: 18px;text-align: left"><span style="font-size: 24px; line-height: 36px;"><strong><span style="line-height: 36px; font-size: 24px;"><span style="line-height: 36px; font-size: 24px;">Hello <b>Mohamed</b>,<br></span><span style="color: #f9b71a;">ــــــــــــــــ</span></span></strong></span></p><p style="margin: 0;font-size: 13px;line-height: 18px;text-align: left"><b>Sellerpier</b> application has been designed and created mainly to acheive the aim of making rapid sales reach on e-commerce online platforms like Amazon, eBay, WooCommerce, Synnex.. etc. very easy.
-                          Our goal is to give the seller the flexibilty needed to actually get high number of sales with absolute ease and full instant and linked control.</span><br></p></div>    
+                    <div style="font-family:'Roboto', Tahoma, Verdana, Segoe, sans-serif;line-height:150%;color:#555555; padding-right: 30px; padding-left: 40px; padding-top: 40px; padding-bottom: 40px;">
+                        <div style="font-size:12px;line-height:18px;color:#555555;font-family:'Roboto', Tahoma, Verdana, Segoe, sans-serif;text-align:left;"><p style="margin: 0;font-size: 12px;line-height: 18px;text-align: left"><span style="font-size: 24px; line-height: 36px;"><strong><span style="line-height: 36px; font-size: 24px;"><span style="line-height: 36px; font-size: 24px;">Hello <b>Dear,</b>,<br></span><span style="color: #f9b71a;">ــــــــــــــــ</span></span></strong></span></p><p style="margin: 0;font-size: 13px;line-height: 18px;text-align: left"><b>Sellerpier</b> application has been designed and created mainly to acheive the aim of making rapid sales reach on e-commerce online platforms like Amazon, eBay, WooCommerce, Synnex.. etc. very easy.
+                          Our goal is to give the seller the flexibilty needed to actually get high number of sales with absolute ease and full instant and linked control.</span><br></p></div>
                     </div>
                     <div style="display: inline-block; text-align: center; margin-bottom: 20px">
                         <div style="display: inline-block; width: 20%">
@@ -340,8 +340,8 @@ a[x-apple-data-detectors=true] {
                     <div style="background-color: transparent; width: 100% !important;">
                     <!--[if (!mso)&(!IE)]><!--><div style="border-top: 0px solid transparent; border-left: 0px solid transparent; border-bottom: 0px solid transparent; border-right: 0px solid transparent; padding-top:0px; padding-bottom:15px; padding-right: 0px; padding-left: 0px;"><!--<![endif]-->
 
-                        
-                    
+
+
                       <div align="center" class="button-container center" style="padding-right: 10px; padding-left: 10px; padding-top:10px; padding-bottom:20px;">
                         <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;"><tr><td style="padding-right: 10px; padding-left: 10px; padding-top:10px; padding-bottom:20px;" align="center"><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="" style="height:37pt; v-text-anchor:middle; width:154pt;" arcsize="8%" strokecolor="#f9b71a" fillcolor="#f9b71a"><w:anchorlock/><v:textbox inset="0,0,0,0"><center style="color:#ffffff; font-family:'Roboto', Tahoma, Verdana, Segoe, sans-serif; font-size:20px;"><![endif]-->
                         <div style="color: #ffffff; background-color: #f9b71a; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; max-width: 206px; width: 166px;width: auto; border-top: 0px solid transparent; border-right: 0px solid transparent; border-bottom: 0px solid transparent; border-left: 0px solid transparent; padding-top: 5px; padding-right: 20px; padding-bottom: 5px; padding-left: 20px; font-family: 'Roboto', Tahoma, Verdana, Segoe, sans-serif; text-align: center; mso-border-alt: none;">
@@ -350,7 +350,7 @@ a[x-apple-data-detectors=true] {
                       <!--[if mso]></center></v:textbox></v:roundrect></td></tr></table><![endif]-->
                     </div>
 
-                  
+
               <!--[if (!mso)&(!IE)]><!--></div><!--<![endif]-->
               </div>
             </div>
@@ -368,14 +368,14 @@ a[x-apple-data-detectors=true] {
               <div style="background-color: transparent; width: 100% !important;">
               <!--[if (!mso)&(!IE)]><!--><div style="border-top: 0px solid transparent; border-left: 0px solid transparent; border-bottom: 0px solid transparent; border-right: 0px solid transparent; padding-top:5px; padding-bottom:5px; padding-right: 0px; padding-left: 0px;"><!--<![endif]-->
 
-                  
+
                     <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px;"><![endif]-->
-            <div style="font-family:'Roboto', Tahoma, Verdana, Segoe, sans-serif;line-height:120%;color:#FFFFFF; padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px;">    
-              <div style="font-size:12px;line-height:14px;color:#FFFFFF;font-family:'Roboto', Tahoma, Verdana, Segoe, sans-serif;text-align:left;"><p style="margin: 0;font-size: 12px;line-height: 14px;text-align: center"><span style="font-size: 10px; line-height: 12px;"><span style="line-height: 12px; font-size: 10px;">All copyrights &copy; reserved to <a href="http://www.sellerpier.com" style="color: white; text-decoration: none; font-weight: bold">Sellerpier</a></span></span></p></div>    
+            <div style="font-family:'Roboto', Tahoma, Verdana, Segoe, sans-serif;line-height:120%;color:#FFFFFF; padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px;">
+              <div style="font-size:12px;line-height:14px;color:#FFFFFF;font-family:'Roboto', Tahoma, Verdana, Segoe, sans-serif;text-align:left;"><p style="margin: 0;font-size: 12px;line-height: 14px;text-align: center"><span style="font-size: 10px; line-height: 12px;"><span style="line-height: 12px; font-size: 10px;">All copyrights &copy; reserved to <a href="http://www.sellerpier.com" style="color: white; text-decoration: none; font-weight: bold">Sellerpier</a></span></span></p></div>
             </div>
             <!--[if mso]></td></tr></table><![endif]-->
 
-                  
+
               <!--[if (!mso)&(!IE)]><!--></div><!--<![endif]-->
               </div>
             </div>
@@ -392,7 +392,7 @@ a[x-apple-data-detectors=true] {
               <div style="background-color: transparent; width: 100% !important;">
               <!--[if (!mso)&(!IE)]><!--><div style="border-top: 0px solid transparent; border-left: 0px solid transparent; border-bottom: 0px solid transparent; border-right: 0px solid transparent; padding-top:5px; padding-bottom:5px; padding-right: 0px; padding-left: 0px;"><!--<![endif]-->
 
-                  
+
                     <table border="0" cellpadding="0" cellspacing="0" width="100%" class="divider" style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;min-width: 100%;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%">
     <tbody>
         <tr style="vertical-align: top">
@@ -410,7 +410,7 @@ a[x-apple-data-detectors=true] {
         </tr>
     </tbody>
 </table>
-                  
+
               <!--[if (!mso)&(!IE)]><!--></div><!--<![endif]-->
               </div>
             </div>
@@ -423,7 +423,7 @@ a[x-apple-data-detectors=true] {
           <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="background-color:transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width: 600px;"><tr class="layout-full-width" style="background-color:transparent;"><![endif]-->
 
               <!--[if (mso)|(IE)]><td align="center" width="598" style=" width:598px; padding-right: 0px; padding-left: 0px; padding-top:5px; padding-bottom:5px; border-top: 1px solid #84A8A5; border-left: 1px solid #84A8A5; border-bottom: 1px solid #84A8A5; border-right: 1px solid #84A8A5;" valign="top"><![endif]-->
-            
+
           <!--[if (mso)|(IE)]></td></tr></table></td></tr></table><![endif]-->
         </div>
       </div>
@@ -437,7 +437,7 @@ a[x-apple-data-detectors=true] {
               <div style="background-color: transparent; width: 100% !important;">
               <!--[if (!mso)&(!IE)]><!--><div style="border-top: 0px solid transparent; border-left: 0px solid transparent; border-bottom: 0px solid transparent; border-right: 0px solid transparent; padding-top:20px; padding-bottom:15px; padding-right: 0px; padding-left: 0px;"><!--<![endif]-->
 
-                  
+
                     <table border="0" cellpadding="0" cellspacing="0" width="100%" class="divider" style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;min-width: 100%;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%">
     <tbody>
         <tr style="vertical-align: top">
@@ -455,7 +455,7 @@ a[x-apple-data-detectors=true] {
         </tr>
     </tbody>
 </table>
-                  
+
               <!--[if (!mso)&(!IE)]><!--></div><!--<![endif]-->
               </div>
             </div>
